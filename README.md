@@ -1,2 +1,2 @@
 # leon2k2k2k.github.io
-This is my academic website
+This is the github for Leon Liu's academic website.
