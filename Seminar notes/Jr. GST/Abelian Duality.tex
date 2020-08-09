@@ -1,0 +1,75 @@
+\documentclass[../main.tex]{subfiles}
+
+\newcommand{\sigmar}{\sigma_{\mathbb{R}}}
+
+\title{Abelian Duality}
+\author{Ricky Weeden}
+\date{2/24/2020}
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\noindent $\Sigma$ a closed Riemann Surface with metric $g$. We have fields valued in $S^1$, $\phi: \Sigma \rightarrow S^1$. The Lagrangian $\mathcal{L}(\phi) \coloneqq R^2/(4\pi) \int_{\Sigma} d\phi \wedge d*\phi$. Where $R$ is the radius of the circle $S^1$, which I think about as a connection.
+
+Plan of todays talk: First we will take out the gauge invariance, then we introduce new fields in a bigger theory, integrate out the new field to recover the old theory, then integrate out the old theory to get a new theory, which is the dual.
+
+\section{setup}
+
+Let $\phi$ be our field, we are going to couple it to electromagnetism: $A \in mathcal{A} \cong \Omega^1_{\Sigma}(\mathbb{R})$, then we have the covariant derivative $D_A : \phi \mapsto d\phi + A$.
+
+I introduce another field $\sigma: \Sigma \mapsto S^1$. So we have introduce $U(1)$ connection together with another field. Notes that $d\sigma$ is well defined globally.
+
+The new Langrangian is :
+$$\mathcal{L}(A, \phi, \sigma) = R^2/(4\phi) \int_{\Sigma}D_A\phi \wedge *D_A\phi - i/(2\pi) \int_{Sigma} \sigma \wedge F_A$$, the last part is equal to $i/(2\pi) \int_{\Sigma} d\sigma \wedge A$.
+
+The Partition function is $$Z = 1/vol({\mathcal{G}}) \int D\phi DA D\sigma \exp{\mathcal{L}(A, \phi, \sigma)}$$
+
+
+We are going to show that this is equivalent to the old theory. Notice that $\sigma$ looks like a Lagrange multiplier term, introduce to be integrate out to give a delta function of the connection at the trivial connection.
+
+
+Choose $\sigma_n:\Sigma \rightarrow S^1$ s.t. $d\sigma_n \in [d\sigma] \subset H^1(\sigma;\mathbb{R})$, and $\sigma_n(P) = 0 \ mod \ 2\pi\mathbb{Z}$. We see that $\sigma = \sigma_n + \sigma_{\mathbb{R}}$, where $\sigma_{\mathbb{R}} \in \Omega^0_{\Sigma}(\mathbb{R})$. Note that $1/(2\pi) \int_C d\sigma = 1/(2\pi) \int_C d\sigma_n \in \mathbb{Z}$.
+
+Choose $(\gamma_j)$ basis for $H^1(\Sigma; \mathbb{Z})$, then we have that $1/(2\pi) d\sigma_n = \sum_j m_j \gamma_j$, then if we integrate out $\sigma$, we get 
+\begin{equation}
+\int D\sigma \exp{-i/2\pi \int(\sigma wedge F_A)} &= 
+\int D\sigma \exp{-i/2\pi \int(\sigma_n + \sigma_{\mathbb{R}} wedge F_A)}\\
+&= \sum_{[d\sigma_k]\in H^1(\Sigma; 2\pi \mathbb{Z}} \exp{-i/2\pi \int d\sigma_n \wedge A) \t} \int D\sigma_{\mathbb{R}} \exp{-i/2\pi \int \sigmar \wedge F_A}
+\end{equation}
+Note that the first piece become $$\prod_j \sum_{m_j \in \mathbb{Z}} \exp^{\im_j \int \gamma_j \wedge A}$$ Where $\int \gamma_j \wedge A$ is the holonomy of $A$ around $C_j$, where $C_j$ is the corresponding curve to the harmonic 1-form.
+Notes that $\prod_j \sum_{m_j} \exp{-im_j h_j} = \prod_j \delta(hol_{C_j}(A) =0$
+
+The second part, we are just going to integrate $\sigmar$ out and we get $\delta{F_A = 0}$, aka the curvature is zero.
+
+So we see that the connection can have no curvature, nor holonomy. Thus it is a trivial (flat) connection.
+
+Gauge fix and integrate out the gauge symmetry we see that $A = 0$, and we recover the old theory.
+
+
+\section{Integrate out $\phi$ and $A$}
+
+Gauge fix: we can gauge fix such that $\phi = 0$. And the $1\{vol{\mathcal{G}}$ goes away.
+
+So we are left with 
+
+$$ Z = \int DA D\sigma \exp{-R^2/4\pi \int_{\Sigma} (A \wedge A wedge *A - i/2\pi \int_{\Sigma} A \wedge d \sigma}$$
+Now we want to complete the square:
+$$A' = A = i/R^2 * d\sigma = \int DA' D\sigma \exp(-R^2/2\pi \int |A|^2) \exp(-1/{4\pi R^2 \int |d\sigma|^2)})$$
+
+We see that the out theory went inverted the radius. This is the duality that Leon discussed last time.
+
+Another question we can ask is where did the operators go?
+
+$d\phi(x) \mapsto D_A \phi(x) \mapsto ?$, where did it go? We need to integrate out $\phi $ and $A$.
+
+The vacuum expectation value of $D_A \phi(x)$ is 
+$$\int DA D\phi D\sigma D_A \phi(X) exp(-S)$$, when we integrate out $D\phi$ and $D\sigma$, we see that $D_A\phi(x)$ becomes $d\phi(x)$. Now let's see where $D_A \phi(x)$ lands on the other side?
+
+It is not very hard to show that it becomes $-i/R^2 * d\sigma$. Basically set $\phi = 0$ and $A' = A + i/R^2 * d\sigma = 0$ when we integrate it out.
+
+Another operator $exp(i\phi)(p)$ 
+
+
+
+\end{document}

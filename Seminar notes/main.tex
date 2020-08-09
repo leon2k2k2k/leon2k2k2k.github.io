@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}%%<-this describes the class of the document. 12pt refers to the size, there are 3 options, 10,11,12. There are other parameters for article for you to select, but that's not very important.
+\usepackage{subfiles} %this allows me to not copy this over every single time. I don't think I will compile all of it in the same file.
+
+%-< This is the list of all the packages I am using:
+\usepackage[utf8]{inputenc}%%<- This introduces a bunch of symbols.
+\usepackage{comment}%<- this allows you to do multi-line of comments
+\usepackage{ragged2e}%<- allows to use justifying, which is ragged left and right.
+\usepackage{indentfirst}%<- This requires the first paragraph to be indented.
+\usepackage{amsthm}%<- Introduces unnumbered theorem environment for remark, comments, etc.
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{amsmath}%<- gives you flexibility in math display mode
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{mathtools}
+\usepackage{mathalfa}
+\usepackage[colorinlistoftodos]{todonotes}  %%<- this creates to-do notes.
+
+%<- New for all the parameters and basic styling:
+\setlength{\parindent}{1em} %<- this sets the identation of every paragraph
+\renewcommand\qedsymbol{$\blacksquare$}%<- This sets the QED at the end of the proofs to be blacksquares
+\newtheorem{theorem}{Theorem}[section] %<- first {??} is the data type, second {} is what will be shown.[] tells you when does it starts recounting.
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark} %<- * means that there is no numbering.
+\theoremstyle{definition}
+\newtheorem*{example}{Example}
+\theoremstyle{definition}
+\newtheorem*{exercise}{Exercise}
+
+% There is where I set all the macros:
+
+
+
+
+\title{Title} %<- The title
+\author{Author} %<- The author
+\date{Date} %<- The date. 
+
+
+\begin{document}
+\maketitle %%<- this tells the document to make the title right here. You can also create a title page.
+
+\noindent % This is the introduction paragraph of the talk.
+
+\tableofcontents %<- this allows you to make the table of contents.
+
+\section{Introduction} 
+
+
+\end{document}

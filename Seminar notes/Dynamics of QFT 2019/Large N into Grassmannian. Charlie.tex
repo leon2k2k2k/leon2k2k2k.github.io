@@ -1,0 +1,31 @@
+\documentclass[../main.tex]{subfiles}
+
+\title{Large N limit intot the Grassmannians}
+\author{Charlie Reid}
+\date{2/26/2020}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+
+Consider $N$ real scalar bosons with potential in dimension 2. The action is $$\mathcal{L} (\phi) \coloneqq \int_{\mathbb{R}^2} d^2x \ (|d\phi|^2 + g/4! (|\phi|^2-1)^2,$$ where $\phi:\mathbb{R}^2 \rightarrow \mathbb{R}^N$ is our field.
+
+In previous talks, we know that in dimension>3, we have spontaneous symmetry breaking and we get $N-1$ massless goldston bosons in the low energy limit.
+
+But in dimension 2, there is no symmetry breaking (WHY??), we will have massive particles, and low energy is the $\sigma$-model into $S^{N-1}$.
+
+The Lagrangian becomes 
+$$\mathcal{L} (\phi) = \int_{|\phi|=1} d^2x |d\phi|^2$$, this is classically a CFT (because the hodge star operator * in two dimension at the middle level depends conformally on the metric). However, there is a anomaly at the quantum level and this is not a (quantum) CFT.
+
+\section{Large $N$ limit}
+
+We have the generating function for the correlation functions $$Z(J) = \int D\phi exp[\mathcal{L} + J\phi]$$, this is called a generating function because taking derivatives with respect to $J(x)$, then set $J = 0$ gives me the coorrelation functions.
+
+To impose that $\phi$ lives on $S^{N-1}$ we add a field $\sigma$, so we also have a term $$\int_{\sigma \in C^{\infty}(\mathbb{R})} exp[i\int_{\mathbb{R}^2} \sigma(|phi|^2-1)]$$. Now we have the term $$1/2\phi(\Delta/\gamma +\sigma) \phi$$, which after integrate over $D\phi$, we see that 
+$$Z(J) = \int D\sigma exp[-N/2 \ log\  (Tr (\Delta/\gamma + i \sigma)) + 1/2 \int_{\mathbb{R}^2} \sigma + J(\delta + i\sigma)^{-1}J$$. Now we are going to take the large $N$ limit and do a saddle-point approximation.
+
+
+
+\end{document}
