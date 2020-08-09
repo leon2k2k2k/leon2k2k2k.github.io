@@ -19,21 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I added my CV in here, so I can import it to Overleaf">
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/BZR seminar/Rok. Counterexamples to HKR in Char p.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/HoTT/Fibration II. Adrian.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/HoTT/GoodFibration.Clough.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/HoTT/HoTT Qitong 2.2.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/HoTT/Univalence Axiom. Daniel.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/Jr. GST/Abelian Duality.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/main.tex" afterDir="false" />
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I added my CV as well as the link to the arend project.">
+      <change afterPath="$PROJECT_DIR$/Seminar notes/BZR seminar/Rok. Counterexamples to HKR in Char p.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/BZR seminar/Rok. Counterexamples to HKR in Char p.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/Jr. GST/Abelian Duality.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/Jr. GST/Abelian Duality.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/String Theory/String Theory.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/String Theory/String Theory.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/String Theory/String Theory.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/main.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/main.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/main.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/main.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar notes/main.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leon CV/My CV.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Leon CV/My CV.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar notes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar notes/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,16 +65,17 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Seminar notes\String Theory" />
+      <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Seminar notes\Jr. GST" />
       <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.My CV">
+  <component name="RunManager" selected="LaTeX.Large N">
     <configuration type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -93,7 +96,7 @@
       </texify>
       <method v="2" />
     </configuration>
-    <configuration name="My CV" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
@@ -101,20 +104,20 @@
         <viewer-command />
         <compiler-arguments />
         <envs />
-        <main-file>$PROJECT_DIR$/Leon CV/My CV.tex</main-file>
-        <output-path />
+        <main-file>$PROJECT_DIR$/Seminar notes/Jr. GST/Abelian Duality.tex</main-file>
+        <output-path>$PROJECT_DIR$/Seminar notes</output-path>
         <auxil-path>$APPLICATION_HOME_DIR$/jbr/bin</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>true</has-been-run>
+        <has-been-run>false</has-been-run>
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config />
       </texify>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="LaTeX.My CV" />
+      <item itemvalue="LaTeX.Large N" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -130,7 +133,7 @@
       <workItem from="1596990970056" duration="3317000" />
       <workItem from="1596994467730" duration="69000" />
       <workItem from="1596994555907" duration="1061000" />
-      <workItem from="1596996256561" duration="2004000" />
+      <workItem from="1596996256561" duration="4619000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596994261216</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I added my CV as well as the link to the arend project.">
+      <created>1596998323074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596998323074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,37 +170,52 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="I added my CV in here, so I can import it to Overleaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="I added my CV in here, so I can import it to Overleaf" />
+    <MESSAGE value="I added my CV as well as the link to the arend project." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added my CV as well as the link to the arend project." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="8" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596995134598">
-      <screen x="0" y="0" width="1097" height="577" />
-    </state>
-    <state x="-1506" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596994482009" />
-    <state x="8" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1097.577@0.0.1097.577" timestamp="1596995134598" />
-    <state x="329" y="44" key="FileChooserDialogImpl" timestamp="1596994881486">
-      <screen x="0" y="0" width="1097" height="577" />
-    </state>
-    <state x="329" y="44" key="FileChooserDialogImpl/0.0.1097.577@0.0.1097.577" timestamp="1596994881486" />
-    <state width="1076" height="129" key="GridCell.Tab.0.bottom" timestamp="1596995620089">
-      <screen x="0" y="0" width="1097" height="577" />
-    </state>
-    <state width="1076" height="129" key="GridCell.Tab.0.bottom/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
-    <state width="1076" height="129" key="GridCell.Tab.0.center" timestamp="1596995620089">
-      <screen x="0" y="0" width="1097" height="577" />
-    </state>
-    <state width="1076" height="129" key="GridCell.Tab.0.center/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
-    <state width="1076" height="129" key="GridCell.Tab.0.left" timestamp="1596995620089">
-      <screen x="0" y="0" width="1097" height="577" />
-    </state>
-    <state width="1076" height="129" key="GridCell.Tab.0.left/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
-    <state width="1076" height="129" key="GridCell.Tab.0.right" timestamp="1596995620089">
-      <screen x="0" y="0" width="1097" height="577" />
-    </state>
-    <state width="1076" height="129" key="GridCell.Tab.0.right/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
-    <state x="-1368" y="193" key="Vcs.Push.Dialog.v2" timestamp="1596994269402">
+    <state x="-1506" y="115" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596999940497">
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="193" key="Vcs.Push.Dialog.v2/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596994269402" />
+    <state x="-1506" y="115" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999940497" />
+    <state x="8" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1097.577@0.0.1097.577" timestamp="1596995134598" />
+    <state x="-1344" y="19" key="FileChooserDialogImpl" timestamp="1596999937335">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state x="-1344" y="19" key="FileChooserDialogImpl/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999937335" />
+    <state x="329" y="44" key="FileChooserDialogImpl/0.0.1097.577@0.0.1097.577" timestamp="1596994881486" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1596999941889">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999941889" />
+    <state width="1076" height="129" key="GridCell.Tab.0.bottom/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1596999941889">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999941889" />
+    <state width="1076" height="129" key="GridCell.Tab.0.center/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1596999941888">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999941888" />
+    <state width="1076" height="129" key="GridCell.Tab.0.left/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1596999941889">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999941889" />
+    <state width="1076" height="129" key="GridCell.Tab.0.right/0.0.1097.577@0.0.1097.577" timestamp="1596995620089" />
+    <state x="-1368" y="193" key="Vcs.Push.Dialog.v2" timestamp="1596998327065">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="193" key="Vcs.Push.Dialog.v2/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596998327065" />
+    <state x="-1143" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596998255921">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
+    </state>
+    <state x="-1143" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596998255921" />
+    <state x="-7" y="-7" width="1111" height="631" key="dock-window-1" timestamp="1597000883801">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state x="0" y="0" width="1111" height="663" key="dock-window-1/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999257925" />
+    <state x="-7" y="-7" width="1111" height="631" key="dock-window-1/0.0.1097.577@0.0.1097.577" timestamp="1597000883801" />
   </component>
 </project>
