@@ -20,6 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Leon CV/Course Taken.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/Formation.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/Resume.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -65,6 +70,7 @@
       <updated>1596670735580</updated>
       <workItem from="1596670736725" duration="1930000" />
       <workItem from="1596931216617" duration="5616000" />
+      <workItem from="1596990970056" duration="3117000" />
     </task>
     <servers />
   </component>

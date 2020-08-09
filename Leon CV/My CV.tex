@@ -1,0 +1,271 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+%
+% (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,-5pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{0pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-1in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{0pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{1pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Yu Leon Liu} & \textbf{\today} \\
+\textit{leon.liu@utexas.edu} \\
+\url{http://leon2k2k2k.github.io}
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item \ressubheading{The University of Texas at Austin}{Austin, Texas}{B.S. in Mathematics Honor, in Progress}{September 2017- \textbf{December 2020}}
+
+\begin{itemize}
+	\resitem{Dean's Scholars Honor Program}
+	\resitem{GPA: 3.9359/4.0}
+\end{itemize}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research and Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    
+\item \ressubheading{\textbf{TQFT and Koszul Duality}}{September 2019-}{Derived Algebraic Geometry, Topological Field Theory}
+
+\begin{itemize}
+    \resitem{Currently doing research with Professor David Ben-Zvi}
+    \resitem{The research project is  on categorifying a version of Koszul Duality that relates tangent bundles and cotangent bundles. The goal is to extend this duality to the level of categories, which relates sheaves of categories $2QCoh(X)$ and $2IndCoh(T^* X)$, which is the value of Rozansky-Witten TFT valued at a point. This is an attempt to develop a theory of singular support for local Geometric Langlands.}
+\end{itemize}
+
+
+\item \ressubheading{\textbf{Chern-Simon Theory}}{August 2020- \textbf{December 2020}} {Mathematical Physics}
+
+\begin{itemize}
+    \resitem{I am completing my honor thesis on the topic of Chern-Simon theory under Professor Dan Freed.} 
+\end{itemize}
+
+\item \ressubheading{\textbf{Homotopy Type Theory}} {January 2020 -} {Formal verification, HoTT}
+
+\begin{itemize}
+    \resitem{See \url{https://github.com/LaufferN/HoTT-Arend}}
+    \resitem{This is an ongoing project to translate and verify all the theorems in \textit{Homotopy Type Theory: an Univalent Foundation} into computer verification program Arend.} 
+    
+\end{itemize}
+
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Conference \& Summer Program}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item \ressubheading{\textbf{Texas Algebraic Geometry Symposium}}{November 2018}{Texas A\&M}
+
+\item \ressubheading{\textbf{Between Topology and Quantum Field Theory}}{January 2019}{UT Austin}
+
+\item \ressubheading{\textbf{Texas Algebraic Geometry Symposium}}{February 2019}{UT Austin}
+
+\item \ressubheading{\textbf{Arizona Winter School: Topology and Arithmetic}}{March 2019}{University of Arizona, Arizona}
+
+\item \ressubheading{\textbf{Park City Mathematics Institute: QFT and Manifold Invariants}}{July 2019}{Park City, Utah}
+
+\item \ressubheading{\textbf{Summer School on Homological Algebra in Mirror Symmetry}}{August 2019}{Fields Institute, Toronto}
+
+\item \ressubheading{\textbf{Tensor Categories and Topological Quantum Field Theories}}{March 2020}{MSRI, online}
+
+\item \ressubheading{\textbf{ $(\infty,n)$-Categories, Factorization Homology, and Algebraic K-Theory}  }{March 2020}{MSRI, online}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Services}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item \ressubheading{UT Mathematics Club} {January 2018 - May 2020} {President}
+    
+\begin{itemize}
+    \resitem {Organizing weekly meeting, responsible for contacting professors, scheduling the lectures, as well as preparing food and drinks for the lectures.}
+    \resitem {Created platform where Undergraduate mathematics students can practice their lecture skills.}
+    \resitem {Created workshops about LaTex, GRE, Graduate School Application for UT undergraduate who are interested in graduate school in Mathematics}
+\end{itemize}
+
+\item \ressubheading{Homotopy Type Theory Class}{January 2020- May 2020} {Organizer}{}
+
+\begin{itemize}
+    \resitem {Created and leading a student-run seminar over Homotopy Type Theory.}
+    \resitem {Creating an Arend documentation to formalize the theorems and proofs in \textit{Homotopy Type Theory: an Univalent Foundation.}}
+\end{itemize}
+    
+\item \ressubheading{Sunday Morning Math Group}{january 2020 - May 2020}{Volunteer}{}
+
+\begin{itemize}
+    \resitem {Volunteer at UT's Sunday Morning Math Group (SMMG).}
+    \resitem {Introduce interesting math concepts to 6-12 graders.}
+\end{itemize}
+
+\item \ressubheading{Mathnasium at South Austin}{May 2018 - June 2018}{Instructor}{}
+\begin{itemize}
+    \resitem {Tutored elementary, middle, and high school students in mathematics.}\\
+\end{itemize}
+    
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Relevant Courses Taken}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-2pt}
+	\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+
+        \multicolumn{2}{c}{M373 Algebra \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M275 Algebraic Geometry \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M375 Homotopy Theory \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M375 Riemannian Geometry \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M375 Riemann Surfaces\cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M475 p-adic Homotopy Theory\cftdotfill{\cftdotsep} \textit{A-}}\\
+        \multicolumn{2}{c}{M475 Research in Koszul Duality \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M375T Analysis On Manifold\cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M375 Geometric Langlands Conjecture \cftdotfill{\cftdotsep} \textit{A}} \\
+        \multicolumn{2}{c}{M380D Algebra\dagger \cftdotfill{\cftdotsep} \textit{A-}}\\
+        \multicolumn{2}{c}{M382D Differential Topology\dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M385C Theory of Probability\dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M392C Morse Theory\dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M392C Algebraic Geometry\dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M392C Mathematical Gauge Theory \dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M392C Stability Conditions \dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M392C P-adic Hodge Theory \dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{M392C Gromov-Witten Theory \dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{PHY387M Relativity Theory \cftdotfill{\cftdotsep} \textit{A}} \\
+        \multicolumn{2}{c}{PHY396K Quantum Field Theory \dagger \cftdotfill{\cftdotsep} \textit{A}}\\
+        \multicolumn{2}{c}{PHY396P String Theory \cftdotfill{\cftdotsep} \textit{A-}} \\
+        \multicolumn{2}{c}{CS370 Homotopy Type Theory  \cftdotfill{\cftdotsep} \textit{A}} \\
+        
+        
+        \vphantom{E}
+		\end{tabular*}
+		\end{center}\vspace*{-16pt}
+ 
+* = \textbf{Current Courses}\\
+\dagger = \textbf{Graduate Courses}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\resheading{Selected Talks Given}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+    
+\item \ressubheading{Algebraic Geometry and Bezouts Theorem}{October 2017}{UT Math Club}
+
+\item \ressubheading{Elliptic Curves are Group Schemes}{November 2017}{Directed Reading Program}
+
+\item \ressubheading{27 Lines}{UT Math Club}{February 2018}
+
+\item \ressubheading{Category Theory and Linear Algebra}{April 2018}{UT Math Club}
+
+\item \ressubheading{Moduli Space of Triangles}{September 2018}{UT Math Club}
+
+\item \ressubheading{Presentable $\infty$ Category and $\infty$ topos}{November 2018}{Higher Topos Theory Seminar}
+
+\item \ressubheading{Bar Construction}{January 2019}{UT Math Club}
+
+\item \ressubheading{Finite Dimensional Approximations to the Monopole Map}{February 2019}{Furuta 10/8 Seminar}
+
+\item \ressubheading{Introduction to Morse Theory via Pictures}{February 2019}{UT Math Club}
+
+\item \ressubheading{$A_{\infty}$ categories and derived Fukaya categories}{March 2019}{Floer Lagrangian Seminar}
+
+\item \ressubheading{Bauer-Furuta Invariants}{April 2019}{Furuta 10/8 Seminar}
+
+\item \ressubheading{Shifted Symplectic Structure on Intersections of Lagrangians}{April 2019}{Derived Algebraic Geometry Seminar}
+
+\item \ressubheading{Derived Stack of Perfect Complexes and Its Cotangent Bundle}{April 2019}{Derived Algebraic Geometry Seminar}
+
+\item \ressubheading{2-shited Symplectic Structure on the Derived Stacks of Perfect Complexes}{May 2019}{Derived Algebraic Geometry Seminar}
+
+\item \ressubheading{Topological Hochschild Homology and Applications to Arithmetic Geometry}{May 2019}{Directed Reading Program}
+
+\item \ressubheading{Seibert-Witten Equation and the Coulomb Gauge}{October 2019}{Triangulation Conjecture Seminar}
+
+\item \ressubheading{T-duality on 2D Sigma Models}{November 2019}{Junior Geometry and String Theory Seminar}
+
+\item \ressubheading{Proof of Triangulation Conjecture}{November 2019}{Triangulation Conjecture Seminar}
+
+\item \ressubheading{Line Bundles and Divisor Correspondence}{February 2020}{Junior Algebraic Geometry Seminar}
+
+\item \ressubheading{Spontaneously Broken Symmetry and Higgs Mechanism}{February 2020}{Dyanmics of QFT Seminar}
+
+\item \ressubheading{Renormalization of Perturbative Quantum Field Theories}{February 2020}{Junior Geometry and String Theory Seminar}
+
+\item \ressubheading{Representation Theory in Physics: Classification of Particles in QFT}{April 2020}{Junior Geometry}
+
+\item \ressubheading{Statistical Field Theory, QFT, Domain walls and Quantum Tunneling}{April 2020}{Junior Geometry and String Theory Seminar}
+
+
+\end{itemize}
+
+
+\end{document}
