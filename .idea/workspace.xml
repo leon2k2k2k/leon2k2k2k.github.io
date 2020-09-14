@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Corrected grammar mistakes">
+      <change afterPath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +58,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io" />
+      <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Leon CV" />
       <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Seminar notes\String Theory" />
       <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Seminar notes\Jr. GST" />
-      <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io" />
     </key>
   </component>
   <component name="RunManager" selected="LaTeX.Large N">
@@ -101,9 +105,6 @@
       </texify>
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="LaTeX.Large N" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,6 +120,8 @@
       <workItem from="1596994467730" duration="69000" />
       <workItem from="1596994555907" duration="1061000" />
       <workItem from="1596996256561" duration="5628000" />
+      <workItem from="1600111725652" duration="923000" />
+      <workItem from="1600112681337" duration="3193000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -218,10 +221,11 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state x="-1143" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596998255921" />
-    <state x="-7" y="-7" width="1111" height="631" key="dock-window-1" timestamp="1597000883801">
-      <screen x="0" y="0" width="1097" height="577" />
+    <state x="0" y="0" width="1294" height="766" key="dock-window-1" timestamp="1600112660725">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="1111" height="663" key="dock-window-1/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999257925" />
     <state x="-7" y="-7" width="1111" height="631" key="dock-window-1/0.0.1097.577@0.0.1097.577" timestamp="1597000883801" />
+    <state x="0" y="0" width="1294" height="766" key="dock-window-1/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600112660725" />
   </component>
 </project>
