@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Corrected grammar mistakes">
-      <change afterPath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +120,7 @@
       <workItem from="1596996256561" duration="5628000" />
       <workItem from="1600111725652" duration="923000" />
       <workItem from="1600112681337" duration="3193000" />
+      <workItem from="1600222482631" duration="2397000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
