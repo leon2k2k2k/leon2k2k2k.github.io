@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Corrected grammar mistakes">
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Added some more reference">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" afterDir="false" />
     </list>
@@ -120,7 +120,8 @@
       <workItem from="1596996256561" duration="5628000" />
       <workItem from="1600111725652" duration="923000" />
       <workItem from="1600112681337" duration="3193000" />
-      <workItem from="1600222482631" duration="2397000" />
+      <workItem from="1600222482631" duration="2772000" />
+      <workItem from="1600382595907" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -150,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597001280799</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I added some references and useful links.">
+      <created>1600224901700</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600224901700</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added some more reference">
+      <created>1600225104115</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600225104115</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +189,9 @@
     <MESSAGE value="I added my CV as well as the link to the arend project." />
     <MESSAGE value="I finish adding the lectures notes." />
     <MESSAGE value="Corrected grammar mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected grammar mistakes" />
+    <MESSAGE value="I added some references and useful links." />
+    <MESSAGE value="Added some more reference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some more reference" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1506" y="115" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596999940497">
@@ -211,11 +228,12 @@
     <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596999941889" />
     <state width="1076" height="123" key="GridCell.Tab.0.right/0.0.1097.577/-1920.-60.1920.1040@0.0.1097.577" timestamp="1597089905764" />
     <state width="1076" height="123" key="GridCell.Tab.0.right/0.0.1097.577@0.0.1097.577" timestamp="1597001242428" />
-    <state x="283" y="44" key="Vcs.Push.Dialog.v2" timestamp="1597001285151">
-      <screen x="0" y="0" width="1097" height="577" />
+    <state x="-1425" y="19" key="Vcs.Push.Dialog.v2" timestamp="1600225112618">
+      <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state x="-1368" y="193" key="Vcs.Push.Dialog.v2/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596998327065" />
     <state x="283" y="44" key="Vcs.Push.Dialog.v2/0.0.1097.577@0.0.1097.577" timestamp="1597001285151" />
+    <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600225112618" />
     <state x="-1143" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596998255921">
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
