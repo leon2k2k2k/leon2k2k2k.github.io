@@ -19,16 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Added a schedule and the first meeting time">
-      <change afterPath="$PROJECT_DIR$/EM_dualtiy_and_Geo_Lang/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.synctex(busy)" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leon CV/My CV.log" beforeDir="false" afterPath="$PROJECT_DIR$/Leon CV/My CV.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leon CV/My CV.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Leon CV/My CV.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I updated my CV, the seminar website, changed whitespace in filenames.">
+      <change beforePath="$PROJECT_DIR$/EM_dualtiy_and_Geo_Lang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/EM_dualtiy_and_Geo_Lang/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +132,7 @@
       <workItem from="1601423966868" duration="57000" />
       <workItem from="1601424071834" duration="312000" />
       <workItem from="1601475582698" duration="67000" />
+      <workItem from="1601475878584" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -190,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600383227919</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I updated my CV, the seminar website, changed whitespace in filenames.">
+      <created>1601476020906</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601476020906</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +217,8 @@
     <MESSAGE value="I added some references and useful links." />
     <MESSAGE value="Added some more reference" />
     <MESSAGE value="Added a schedule and the first meeting time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a schedule and the first meeting time" />
+    <MESSAGE value="I updated my CV, the seminar website, changed whitespace in filenames." />
+    <option name="LAST_COMMIT_MESSAGE" value="I updated my CV, the seminar website, changed whitespace in filenames." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1506" y="115" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596999940497">
