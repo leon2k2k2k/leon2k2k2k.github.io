@@ -20,19 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Added a schedule and the first meeting time">
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leon CV/My CV.synctex(busy)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EM_dualtiy_and_Geo_Lang/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leon CV/My CV wo Courses.synctex(busy)" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leon CV/My CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Leon CV/My CV.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EM dualtiy and Geo Lang/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leon CV/My CV.log" beforeDir="false" afterPath="$PROJECT_DIR$/Leon CV/My CV.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Leon CV/My CV.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Leon CV/My CV.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar notes/Dynamics of QFT 2019/Large N into Grassmannian. Charlie.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -137,6 +134,12 @@
       <workItem from="1600399667104" duration="301000" />
       <workItem from="1600458637923" duration="38000" />
       <workItem from="1600727906444" duration="1898000" />
+      <workItem from="1601386712751" duration="676000" />
+      <workItem from="1601422687692" duration="35000" />
+      <workItem from="1601422750355" duration="51000" />
+      <workItem from="1601423966868" duration="57000" />
+      <workItem from="1601424071834" duration="312000" />
+      <workItem from="1601475582698" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
