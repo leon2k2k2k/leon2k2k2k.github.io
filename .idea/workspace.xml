@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I updated my CV, the seminar website, changed whitespace in filenames.">
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Deleted notes columns from seminar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EM_dualtiy_and_Geo_Lang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/EM_dualtiy_and_Geo_Lang/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +133,8 @@
       <workItem from="1601423966868" duration="57000" />
       <workItem from="1601424071834" duration="312000" />
       <workItem from="1601475582698" duration="67000" />
-      <workItem from="1601475878584" duration="299000" />
+      <workItem from="1601475878584" duration="1585000" />
+      <workItem from="1602097575516" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -190,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601476020906</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Deleted notes columns from seminar">
+      <created>1601476223785</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601476223785</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +227,8 @@
     <MESSAGE value="Added some more reference" />
     <MESSAGE value="Added a schedule and the first meeting time" />
     <MESSAGE value="I updated my CV, the seminar website, changed whitespace in filenames." />
-    <option name="LAST_COMMIT_MESSAGE" value="I updated my CV, the seminar website, changed whitespace in filenames." />
+    <MESSAGE value="Deleted notes columns from seminar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted notes columns from seminar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1506" y="115" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596999940497">
@@ -275,12 +285,13 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state width="1899" height="246" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600394077596" />
-    <state x="-1425" y="19" key="Vcs.Push.Dialog.v2" timestamp="1600383233260">
-      <screen x="-1920" y="-60" width="1920" height="1040" />
+    <state x="330" y="52" key="Vcs.Push.Dialog.v2" timestamp="1601476227621">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1368" y="193" key="Vcs.Push.Dialog.v2/0.0.1097.577/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1596998327065" />
     <state x="283" y="44" key="Vcs.Push.Dialog.v2/0.0.1097.577@0.0.1097.577" timestamp="1597001285151" />
     <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600383233260" />
+    <state x="330" y="52" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@0.0.1280.680" timestamp="1601476227621" />
     <state x="-1143" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596998255921">
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
