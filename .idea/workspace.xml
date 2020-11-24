@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Corrected small grammer">
-      <change afterPath="$PROJECT_DIR$/Research_files/Senior_Thesis_rough_draft.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Added a rough draft of my senior thesis." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +134,7 @@
       <workItem from="1601475878584" duration="1585000" />
       <workItem from="1602097575516" duration="657000" />
       <workItem from="1602954390196" duration="761000" />
-      <workItem from="1606243518635" duration="3702000" />
+      <workItem from="1606243518635" duration="4405000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -231,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606254740992</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a rough draft of my senior thesis.">
+      <created>1606255422555</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606255422555</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +267,8 @@
     <MESSAGE value="I updated some stuff, like a more detailed description of my research. &#10;&#10;I still need to put a draft out there though..." />
     <MESSAGE value="Referenced Freed-Teleman." />
     <MESSAGE value="Corrected small grammer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected small grammer" />
+    <MESSAGE value="Added a rough draft of my senior thesis." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a rough draft of my senior thesis." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="246" key="GridCell.Tab.0.bottom" timestamp="1600394077596">
@@ -299,13 +303,14 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state width="1899" height="246" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600394077596" />
-    <state x="330" y="52" key="Vcs.Push.Dialog.v2" timestamp="1606253799005">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2415" y="140" key="Vcs.Push.Dialog.v2" timestamp="1606255426445">
+      <screen x="1920" y="60" width="1920" height="1040" />
     </state>
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/0.0.1280.680@0.0.1280.680" timestamp="1606253799005" />
     <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600383233260" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@0.0.1280.680" timestamp="1602954546807" />
     <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1606244538698" />
+    <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1606255426445" />
     <state x="0" y="0" width="1294" height="766" key="dock-window-1" timestamp="1600112660725">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
