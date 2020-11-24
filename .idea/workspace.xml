@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Referenced Freed-Teleman.">
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Corrected small grammer">
+      <change afterPath="$PROJECT_DIR$/Research_files/Senior_Thesis_rough_draft.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Research_files" />
       <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io" />
       <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Leon CV" />
       <recent name="C:\Users\liule\OneDrive\Desktop\academicthings\CareerStuff\leon2k2k2k.github.io\Seminar notes\String Theory" />
@@ -135,7 +138,7 @@
       <workItem from="1601475878584" duration="1585000" />
       <workItem from="1602097575516" duration="657000" />
       <workItem from="1602954390196" duration="761000" />
-      <workItem from="1606243518635" duration="2959000" />
+      <workItem from="1606243518635" duration="3702000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -221,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606253794923</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Corrected small grammer">
+      <created>1606254740992</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606254740992</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +263,8 @@
     <MESSAGE value="Update EM duality seminar website" />
     <MESSAGE value="I updated some stuff, like a more detailed description of my research. &#10;&#10;I still need to put a draft out there though..." />
     <MESSAGE value="Referenced Freed-Teleman." />
-    <option name="LAST_COMMIT_MESSAGE" value="Referenced Freed-Teleman." />
+    <MESSAGE value="Corrected small grammer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected small grammer" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="246" key="GridCell.Tab.0.bottom" timestamp="1600394077596">
