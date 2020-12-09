@@ -319,14 +319,19 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state width="1899" height="246" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600394077596" />
-    <state x="2415" y="140" key="Vcs.Push.Dialog.v2" timestamp="1606256781790">
-      <screen x="1920" y="60" width="1920" height="1040" />
+    <state x="330" y="52" key="Vcs.Push.Dialog.v2" timestamp="1607557419384">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/0.0.1280.680@0.0.1280.680" timestamp="1606253799005" />
+    <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/1920.0.1920.1040/0.0.1280.680@0.0.1280.680" timestamp="1607557419384" />
     <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600383233260" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@0.0.1280.680" timestamp="1602954546807" />
     <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1606244538698" />
     <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1606256781790" />
+    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607557277392">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-60.1920.1020/1920.0.1920.1040/0.0.1280.680@0.0.1280.680" timestamp="1607557277392" />
     <state x="0" y="0" width="1294" height="766" key="dock-window-1" timestamp="1600112660725">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
