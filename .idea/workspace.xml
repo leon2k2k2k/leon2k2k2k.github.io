@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Updated CV.">
-      <change afterPath="$PROJECT_DIR$/Leon_CV/Leon_CV.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Research/senior_thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leon_CV/Yu_Leon_Liu_CV.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leon_CV/Leon_CV.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Research_files/Senior_Thesis_rough_draft.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +141,8 @@
       <workItem from="1602097575516" duration="657000" />
       <workItem from="1602954390196" duration="761000" />
       <workItem from="1606243518635" duration="5528000" />
+      <workItem from="1607281577990" duration="88000" />
+      <workItem from="1607556223546" duration="1096000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
