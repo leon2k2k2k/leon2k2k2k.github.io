@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I uploaded a new version of senior thesis. Fixsed a proof in lemma 5.5.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I updated my senior thesis, added some diagrams." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,6 +139,7 @@
       <workItem from="1607556223546" duration="1980000" />
       <workItem from="1607566406063" duration="681000" />
       <workItem from="1607620446285" duration="726000" />
+      <workItem from="1607638761980" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -268,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607620559671</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="I updated my senior thesis, added some diagrams.">
+      <created>1607639002081</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607639002081</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +312,8 @@
     <MESSAGE value="I updated my senior thesis and corrected some errors." />
     <MESSAGE value="I fixed a bug" />
     <MESSAGE value="I uploaded a new version of senior thesis. Fixsed a proof in lemma 5.5." />
-    <option name="LAST_COMMIT_MESSAGE" value="I uploaded a new version of senior thesis. Fixsed a proof in lemma 5.5." />
+    <MESSAGE value="I updated my senior thesis, added some diagrams." />
+    <option name="LAST_COMMIT_MESSAGE" value="I updated my senior thesis, added some diagrams." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="246" key="GridCell.Tab.0.bottom" timestamp="1600394077596">
