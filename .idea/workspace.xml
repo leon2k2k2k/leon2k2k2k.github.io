@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I updated my senior thesis, added some diagrams." />
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="I corrected my CV address">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +141,7 @@
       <workItem from="1607556223546" duration="1980000" />
       <workItem from="1607566406063" duration="681000" />
       <workItem from="1607620446285" duration="726000" />
-      <workItem from="1607638761980" duration="429000" />
+      <workItem from="1607638761980" duration="1234000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -274,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607639002081</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="I corrected my CV address">
+      <created>1607639341121</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607639341121</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +322,8 @@
     <MESSAGE value="I fixed a bug" />
     <MESSAGE value="I uploaded a new version of senior thesis. Fixsed a proof in lemma 5.5." />
     <MESSAGE value="I updated my senior thesis, added some diagrams." />
-    <option name="LAST_COMMIT_MESSAGE" value="I updated my senior thesis, added some diagrams." />
+    <MESSAGE value="I corrected my CV address" />
+    <option name="LAST_COMMIT_MESSAGE" value="I corrected my CV address" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="246" key="GridCell.Tab.0.bottom" timestamp="1600394077596">
@@ -348,15 +358,15 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state width="1899" height="246" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600394077596" />
-    <state x="495" y="80" key="Vcs.Push.Dialog.v2" timestamp="1607620564870">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2415" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607639390546">
+      <screen x="1920" y="60" width="1920" height="1040" />
     </state>
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/0.0.1280.680@0.0.1280.680" timestamp="1606253799005" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/1920.0.1920.1040/0.0.1280.680@0.0.1280.680" timestamp="1607557611244" />
     <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600383233260" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@0.0.1280.680" timestamp="1602954546807" />
-    <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1607620564870" />
-    <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1606256781790" />
+    <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1607639033359" />
+    <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1607639390546" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607557277392">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
