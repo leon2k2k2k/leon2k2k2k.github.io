@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Updated CV once again, corrected grammar mistakes">
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Updated CV, minor corrections. Updated senior thesis, this is a final version (for now).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,6 +142,7 @@
       <workItem from="1607566406063" duration="681000" />
       <workItem from="1607620446285" duration="726000" />
       <workItem from="1607638761980" duration="3374000" />
+      <workItem from="1607711336344" duration="1117000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -304,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607655364668</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated CV, minor corrections. Updated senior thesis, this is a final version (for now).">
+      <created>1607711544719</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607711544719</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +355,8 @@
     <MESSAGE value="Updated my CV, so that the link to the senior thesis works!" />
     <MESSAGE value="Updated CV once again" />
     <MESSAGE value="Updated CV once again, corrected grammar mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated CV once again, corrected grammar mistakes" />
+    <MESSAGE value="Updated CV, minor corrections. Updated senior thesis, this is a final version (for now)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated CV, minor corrections. Updated senior thesis, this is a final version (for now)." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="246" key="GridCell.Tab.0.bottom" timestamp="1600394077596">
@@ -382,7 +391,7 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state width="1899" height="246" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600394077596" />
-    <state x="2415" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607655371170">
+    <state x="2415" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607711844763">
       <screen x="1920" y="60" width="1920" height="1040" />
     </state>
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/0.0.1280.680@0.0.1280.680" timestamp="1606253799005" />
@@ -390,7 +399,7 @@
     <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600383233260" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@0.0.1280.680" timestamp="1602954546807" />
     <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1607639033359" />
-    <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1607655371170" />
+    <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1607711844763" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607557277392">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
