@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Updated CV, replaced HERE with a tinyurl">
-      <change afterPath="$PROJECT_DIR$/Leon_CV/Yu_Liu_CV.pdf" afterDir="false" />
+    <list default="true" id="939b5e47-7dba-429b-9eab-26f5c2c16933" name="Default Changelist" comment="Added abstract of my thesis into the website. I also changed the senior thesis a slight bit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Research/senior_thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Research/senior_thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +146,10 @@
       <workItem from="1607711336344" duration="1117000" />
       <workItem from="1607806572548" duration="79000" />
       <workItem from="1607888914951" duration="5000" />
-      <workItem from="1607969540254" duration="658000" />
+      <workItem from="1607969540254" duration="1856000" />
+      <workItem from="1608135537832" duration="6000" />
+      <workItem from="1608588776439" duration="673000" />
+      <workItem from="1609271288772" duration="3620000" />
     </task>
     <task id="LOCAL-00001" summary="I added my CV in here, so I can import it to Overleaf">
       <created>1596994261216</created>
@@ -325,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607806602303</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added abstract of my thesis into the website. I also changed the senior thesis a slight bit.">
+      <created>1607970393967</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1607970393967</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +353,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I added my CV in here, so I can import it to Overleaf" />
     <MESSAGE value="I added my CV as well as the link to the arend project." />
     <MESSAGE value="I finish adding the lectures notes." />
     <MESSAGE value="Corrected grammar mistakes" />
@@ -370,7 +377,8 @@
     <MESSAGE value="Updated CV once again, corrected grammar mistakes" />
     <MESSAGE value="Updated CV, minor corrections. Updated senior thesis, this is a final version (for now)." />
     <MESSAGE value="Updated CV, replaced HERE with a tinyurl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated CV, replaced HERE with a tinyurl" />
+    <MESSAGE value="Added abstract of my thesis into the website. I also changed the senior thesis a slight bit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added abstract of my thesis into the website. I also changed the senior thesis a slight bit." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="246" key="GridCell.Tab.0.bottom" timestamp="1600394077596">
@@ -405,14 +413,14 @@
       <screen x="-1920" y="-60" width="1920" height="1040" />
     </state>
     <state width="1899" height="246" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600394077596" />
-    <state x="2415" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607806636816">
-      <screen x="1920" y="60" width="1920" height="1040" />
+    <state x="495" y="80" key="Vcs.Push.Dialog.v2" timestamp="1607970796527">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/0.0.1280.680@0.0.1280.680" timestamp="1606253799005" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/-1920.-60.1920.1020/1920.0.1920.1040/0.0.1280.680@0.0.1280.680" timestamp="1607557611244" />
     <state x="-1425" y="19" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@-1920.-60.1920.1040" timestamp="1600383233260" />
     <state x="330" y="52" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-60.1920.1040@0.0.1280.680" timestamp="1602954546807" />
-    <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1607639033359" />
+    <state x="495" y="80" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@0.0.1920.1040" timestamp="1607970796527" />
     <state x="2415" y="140" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.60.1920.1040@1920.60.1920.1040" timestamp="1607806636816" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607557277392">
       <screen x="0" y="0" width="1280" height="680" />
