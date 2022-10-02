@@ -1,8 +1,9 @@
 * { margin: 0; padding: 0; list-style-type: none; }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./iceburg.jpg');
-    /* background-image: url();  */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./iceburg.jpg'); */
+    /* background:url('./iceburg.jpg') */
+    background-image: url('./iceburg.jpg'); 
     height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +85,8 @@ h2,h3,h4 { font-weight: normal; }
 #content { 
     margin: 0 auto;
     /* background-color: rgb(180, 180, 180); */
-    border-image:url(./iceburg.jpg)
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+    /* border-image:url(./iceburg.jpg) */
     /* border-left-style:solid;
     border-left-width: 40px;
     border-left-color:rgb(37, 43, 96);
