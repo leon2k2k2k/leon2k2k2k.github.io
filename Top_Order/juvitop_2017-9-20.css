@@ -85,12 +85,12 @@ h2,h3,h4 { font-weight: normal; }
 #content { 
     margin: 0 auto;
     /* background-color: rgb(180, 180, 180); */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     /* border-image:url(./iceburg.jpg) */
     /* border-left-style:solid;
     border-left-width: 40px;
-    border-left-color:rgb(37, 43, 96);
-    width: 570px; */
+    border-left-color:rgb(37, 43, 96); */
+    width: 570px;  
 }
 
 #content>h1 { 
