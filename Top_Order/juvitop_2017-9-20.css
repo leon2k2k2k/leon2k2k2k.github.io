@@ -1,0 +1,257 @@
+* { margin: 0; padding: 0; list-style-type: none; }
+
+body {
+    background-color: white;
+    color: black;
+    font: 14px Verdana, Arial, sans-serif;
+    border-top: 4px solid #666;
+    border-bottom: 4px solid #666;
+}
+
+a { color: #933; text-decoration: none;}
+a:hover { color: #611; }
+
+
+sub {  font-size: .8em; line-height: 0; }
+sup {  font-size: .8em;  vertical-align: super;    line-height: 0; }
+
+h2,h3,h4 { font-weight: normal; }
+
+#topbar, #bottombar {
+    padding: 0.3em 0.5em;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+#topbar {
+    height: 140px;
+    border-top: 2px solid #933;
+    text-align: right;
+    text-transform: lowercase;
+    line-height: 18px;
+}
+
+#topbar #logo { float: left; }
+
+#logo a {
+    display: block;
+    overflow: hidden;
+    text-indent: 9000px;
+    background: url(img/mit-logo.gif) 3px 3px no-repeat;
+    width: 115px;
+    height: 65px;
+}
+
+#bottombar {
+    margin-top: 15em;
+    border-bottom: 2px solid #933;
+}
+
+#bottombar li { 
+    float: left;
+    padding-right: 7px;
+}
+#bottombar li+li { border-left: 1px solid #aaa; padding-left: 7px; }
+
+
+#header { 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#header h1 { 
+    font-size: 34px; 
+    margin: 15px auto;
+}
+
+#content { 
+    margin: 0 auto;
+    /* background-color: rgb(180, 180, 180); */
+    /* border-left-style:solid;
+    border-left-width: 40px;
+    border-left-color:rgb(37, 43, 96); */
+    width: 570px;
+}
+
+#content>h1 { 
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+p { margin-bottom: 10px; }
+
+#content > h2 { 
+    margin: 0px 0px 25px auto; 
+    font-size: 24px; 
+    text-align: center;
+}
+
+#nav { 
+    margin: 20px auto;
+    overflow: hidden;
+}
+#nav a {
+    padding: 4px 0;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin: 0 1px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    width: 49%;
+}
+#nav .active a,
+#nav a:hover { 
+    color: #622;
+    background: #f3f3f3;
+}
+
+
+
+.meta .date { 
+    float: right;
+    margin-left: -85px;
+    margin-top: -4px;    
+    padding: 5px;
+    width: 60px;    
+    background: #771313;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.meta .date b { 
+    display: block;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 22px;
+}
+.meta .calendar,
+.meta .poster { 
+    float: right;
+    margin: -2px 5px 0 0;
+}
+.meta .calendar a,
+.meta .poster a { 
+    display: block;
+    text-indent: 9000px;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+}
+.meta .calendar a { background: url(img/calendar-gray.gif) 0 1px no-repeat; } 
+.meta .calendar a:hover { background-image: url(img/calendar.gif); }
+.meta .poster a { background: url(img/pdf-gray.gif) 0 0 no-repeat; }
+.meta .poster a:hover { background-image: url(img/pdf.gif); }
+
+
+#talks { margin-top: 35px; }
+#talks>li { 
+    margin-bottom: 45px;
+    line-height: 20px;
+    min-height: 55px;
+}
+
+.talk .title { /* title */
+    font-size: 20px;
+    margin-top: -6px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    display: table;
+    max-width: 520px;    
+    float: left;
+}
+.talk .title label { display: inline-block; width: 100%; }
+
+.talk .speaker { 
+    float:left;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.talk .speaker span { font-size: 16px; } /* institution */
+
+/* A ul with this class encloses the non-meta part of each talk. 
+ *  The point of it is to make it possible to clear the floated parts of the talk
+ *  without clearing the meta stuff.
+ */
+.talk_float { 
+    float: left;
+    /* If the element is too wide, everything moves down to avoid passing underneath the google calendar icon. Prevent this!*/
+    /* This value can't be larger than 95% */
+    width: 95%; 
+}
+
+
+.notes h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notes strong {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notes ul {
+    padding-bottom: 3px;
+    padding-left: 18px;
+}
+
+.notes li {
+    padding-top: 3px;
+    list-style-type: circle;
+}
+
+.talk .notice { 
+    font: italic 14px Georgia;
+    color: #666;
+    margin: 0 0 10px 15px;
+}
+
+
+input { display: none;}
+.begroup { display: none;}
+
+.plusminus {
+    display: inline-block;
+    width: 20px; 
+    background: url('img/plus.gif') no-repeat;
+}
+input:checked ~ .plusminus { background-image: url('img/minus.gif'); }
+
+.talk .plusminus { /* This applies to the talk abstracts */
+    margin-top: -6px;
+    background-position: 100% 50%;
+    height: 25px; 
+    float: left; 
+} 
+.talk .abstract { display: none; }
+.talk input:checked ~ .abstract { display: block; }
+
+
+.old_juvitop_entry {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+
+.old_juvitop_entry .meta .date {
+    font-size: 16px;
+    margin-top: 3px; /* this overwrites a negative value in .meta .date */
+}
+
+.old_juvitop_entry > h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.old_juvitop_entry .organizer {
+    font-size: 16px;
+}
+
