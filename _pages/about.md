@@ -54,8 +54,7 @@ Minor thesis on <a href="assets/minor-thesis/minor-thesis.pdf"> Khovanov Homolog
   <ul>
         <!--    DON'T CHANGE THE NAME 'Leon_CV'!!!-->
         <li><a href="assets/Leon_CV/Leon_CV-24-01.pdf">Curriculum vitae</a></li>
-        <li><a href="assets/Seminar_notes">Lecture and seminar notes</a></li>
-    </ul>
+  </ul>
 
 
 <br>
