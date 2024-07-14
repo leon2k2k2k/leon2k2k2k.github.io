@@ -1,0 +1,51 @@
+\documentclass[../main.tex]{subfiles}
+
+\title{Univalence Axiom}
+\author{Daniel Kim}
+\date{March 6th, 2020}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Motivation}
+
+What is the Univalence Axioms about? There is a canonical map $coe: A =_{\mathcal{U}} B \rightarrow A \simeq B$. We define this via transport: $p \mapsto transport^{id_U}(p)$. Note that this gives the maps $f : A \rightarrow B$ given $p: A = B$, and this is in fact a homotopy equivalence.Thus this maps to $A \simeq B$. 
+
+What about the inverse: we would like to provide the inverse $ua: A \simeq B \rightarrow A =_{\mathcal{U}} B$.
+
+\section{Univalence Axiom}
+
+The univalence axiom says that $coe$ is in fact an equivalence, thus $(A \simeq B) \simeq (A =_{\mathcal{U}} B)$. One way to think about it is that we want to "propositionally" introduce the type $A = B$. Following the type constructions we have before, we will do the same thing:
+
+\begin{enumerate}
+    \item Introduction: we need to introduce element of $A = B$. This is given by the "univalence axiom" $ua: \rightarrow A = B$.
+    \item Elimination: we already have this. Eliminator are ways you want to map out of the type, we have $coe: A = B \rightarrow A \simeq B$.
+    \item Elimnination rule: $coe(ua(\mathcal{H})) = \mathcal{H}(x)$.
+    \item Uniqueness: $ua(coe(p)) = p$.
+    
+\end{enumerate}
+
+Now let us discuss how we can use the univalence axiom:
+
+\section{(2=2) = 2}
+
+We want to show that $(2=2) = 2$. What we will actually do is to prove that $(2 \simeq 2) \simeq 2$. We have two homotopy equivalences $ff, id_2: (2 \simeq 2)$, where $id_2$ is just the identity map, and flip-flop $ff$ is $0_2 \mapsto 1_2$ and $1_2 \mapsto 0_2$. Now, our map $(2 \simeq 2) \rightarrow 2$ takes a map $m \rightarrow m(0_2)$, where $m : 2 \simeq 2$, which we think about as a function $2 \rightarrow 2$. In reverse, it maps $0_2$ to $id_2$, and $1_2$ to $ff$.
+
+It is easy to check that these are homotopy inverses. Now we can use univalence axiom to replace $\simeq$ with $=$, thus we get that $(2 = 2) = 2$.
+
+\begin{remark} Note that in an extensional type theory, where $=$ and $\equiv$ are considered the same, univalence axiom can't be assumed. This is analogues to set theory, where we have a notion of bijection of sets and a notion of equality of sets. Working mathematicians never really use the equality of things, they also consider things up to bijection (isomorphism when you have more structure). In an universe with univalence axiom, we have that equality of sets are the same thing as bijecction of sets, since propositional equality $=$ are not required to be the same as definitional equality $\equiv$. 
+\end{remark}
+
+We are going to show any other example, this one more homotopic flavored: we want to show that $\Omega^1(S^1) = \mathbb{Z}$, aka, calculating the fundamental group of a sphere.
+
+\section{Fundamental group of a sphere}
+
+First we need to define $S^1$ and $\mathbb{Z}$. $S^1$ is the type with one element $base : S^1$ and one morphism $base = base$.
+
+On the other hand, we have $\mathbb{Z}$, with elements $po: \mathbb{N} \rightarrow \mathbb{Z}$, $0 : \mathbb{Z}$, and $neg: \mathbb{Z} \rightarrow \mathbb{Z}$. 
+
+Loop space $
+
+\end{document}

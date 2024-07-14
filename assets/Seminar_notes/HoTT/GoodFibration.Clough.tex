@@ -1,0 +1,49 @@
+\documentclass[../main.tex]{subfiles}
+
+\title{good fibration in different contexts}
+\author{Adrian Clough}
+\date{2/28/2020}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{introduction}
+
+Given a map $p: E \rightarrow B$ of sets, we get a map from $B$ to the "set of all sets" $U$: we take $b \in B$ to $p^{-1}(b)$. 
+
+We can also go the other way around, given a map $B \rightarrow U$, then we can create a "fibration" $p: E \rightarrow B$ by the inverse construction. 
+
+We can also elevate this to the case of groupoids. If $U$ is the category of all groupoids, then given a map $B \rightarrow U$, then we can have a groupoid $E$ living over $B$.
+
+But now we have $B$ is a set, and $U$ is no the category of set, but the category of groupoids. Secretly, we are thinking about $B$ as a discrete groupoid. Let's see what happens when we try to upgrade $B$ to groupoids. It turns out this equivalence is no longer true: groupoids over B are not the same thing as functors from $B \rightarrow U$.
+
+The problem is that there are too many groupoids over $B$, not all of them can come from a functor. Let's restrict ourselves to those groupoids how corresponds to functors from $B \rightarrow U$:
+
+\begin{definition}
+$p: E \rightarrow B$ is a left fibration if for every $e \in E$ and a map $f: pe \rightarrow b$, exists unique lift of $f$ to $\tilde{f}: e \rightarrow e'$ with $p\tilde{f}=f$.
+\end{definition}
+These groupoids over $B$ corresponds to $B \rightarrow U$. 
+
+In general, when $B$ is a $n$-groupoid, then we need $U$ to be the $(n+1)$ groupoid of $n$-groupoid, and $E$ is a $n+1$ groupoid. As before, this is problematic until you get to infinity groupoid.
+
+\todo[inline]{Is the above sentence even correct?}
+
+\section{infinity groupoid and homotopy hypothesis}
+
+What are infinity groupoid? $n$ groupoids for $n \geq 2$ is already confusing enough, how can we define infinity groupoids? Alexander Grothendieck gives us a definition of infinity groupoids:
+
+\begin{theorem} {Grothendieck's homotopy hypothesis}
+
+A $\infty$-groupoid is the samme thing as a topological space up to homotopy.
+
+\end{theorem}
+
+
+
+
+
+
+\end{document}
