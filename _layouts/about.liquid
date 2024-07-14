@@ -48,24 +48,24 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %} {% endcomment %}
 
-    <!-- Latest posts -->
+    {% comment %} <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
-    {% endif %}
+    {% endif %} {% endcomment %}
 
     <!-- Selected papers -->
-    {% if page.selected_papers %}
+    {% comment %} {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
-    {% endif %}
+    {% endif %} {% endcomment %}
 
 
-    
+{% comment %}     
     <!-- Social -->
     {% if page.social %}
       <div class="social">
@@ -73,7 +73,7 @@ layout: default
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
-    {% endif %}
+    {% endif %} {% endcomment %}
 
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
