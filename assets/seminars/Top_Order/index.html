@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Topological Order</title>
+    <style type="text/css">
+/* 
+        dt, dd { display: inline-block; float: left; }
+        dt { clear: left; }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+        th {
+            text-align: left;
+        }
+
+        body {
+            margin-right: 50px;
+        } */
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            }
+
+            .sidenav a:hover {
+            color: #f1f1f1;
+            }
+            .boxed {
+            padding: 10px;
+            margin: 0 -1em;
+
+            /* outline:2px; */
+            border: 1px solid rgb(196, 159, 25) ;
+            border-width:5px;
+}
+            /* #tab table, th, td, tr {border: none;
+            border-collapse: collapse;} */
+
+    </style>
+    <link rel="stylesheet" href="juvitop_2017-9-20.css" type="text/css">
+</head>
+
+
+<body text="white">
+    <!-- <div style="border-left: 60px solid rgb(22, 59, 103); padding: 0.5px; background-color: rgb(209, 210, 212);"> -->
+    <!-- <div class="bg-image"> -->
+    <div id="content" text="white">
+
+<h2>Topological Order Learning seminar</h2>
+
+<h1>Spring 2022 (online)</h1>
+<hr>
+
+<!-- <h1>Overview:</h1> -->
+<p>This is a MIT learning seminar on topological orders.  </p>
+
+<!-- <p> This is organized by <a href='mailto: camkru@mit.edu'>Cameron Krulewski </a>and <a href='mailto: yuleonliu@math.harvard.edu'> Leon Liu</a>.</p> -->
+
+<p> The usual time for the seminar is <b>Thursday 1:00 PM - 2:00 EST</b> at MIT. We don't have a set meeting place but the Low's seminar room seems to be free.
+
+Here's a <a href="https://docs.google.com/document/d/13cV4uQlycZfbyMGU-cF6eGLSfHczrLRBlzMQLZ4QkYs/edit#">google doc </a>for talks and topics and questions.
+<hr>
+<!-- <h1>Schedule:</h1> -->
+
+        <ul id= "talks">
+
+            <li class="talk">
+                <ul class="meta">
+                <li class="date"><b> 9/24</b>2022</li>
+                <!--
+                
+                    <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                
+                -->
+                </ul>
+                  
+                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-2"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-1">\begingroup</script> </div>
+                    <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                    
+                        
+                            <h4 class="title">Organization meeting</h4>
+                        
+                        <div style="clear: both;"></div>
+                    
+                    
+                        <!-- <h3 class="speaker">Leon and Cameron</h3> -->
+                        <!-- <div style="clear: both;">I will give a 15 minutes quick overview
+                        over the content of the paper and the notes. Then we will decide on logistics and sign up for talks.</div> -->
+                    
+                   <hr> 
+                    
+                    
+                    </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-3" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-4"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-2">\endgroup</script> </div>
+                    
+                </li>
+                
+
+
+                <li class="talk">
+                    <ul class="meta">
+                    <li class="date"><b> 9/31</b>2022</li>
+                    <!--
+                    
+                        <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                    
+                    -->
+                    </ul>
+                      
+                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                    Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                        
+                            
+                                <h4 class="title"> Lattice models, toric code, and anyons</h4>
+                            
+                            <div style="clear: both;"></div>
+                        
+                        
+                            <h3 class="speaker">Prox</h3>
+                            <div style="clear: both;"> Talks about lattice model and toric code, superselection sectors and anyons.  </div>
+                        
+                            <hr>
+                        
+                        
+                        </ul><div style="clear:both;">
+
+                        </div> <!-- close talk_float div, and it needs to be cleared -->
+                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                    
+                    </li>
+
+                    <li class="talk">
+                        <ul class="meta">
+                        <li class="date"><b> 10/6</b>2022</li>
+                        <!--
+                        
+                            <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                        
+                        -->
+                        </ul>
+                          
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                            <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                        Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            
+                                
+                                    <h4 class="title">Levin-Wen String net condensation. 
+
+                                    </h4>
+                                
+                                <div style="clear: both;"></div>
+                            
+                            
+                                <h3 class="speaker">Group</h3>
+                                <div style="clear: both;">
+                                    We will watch <a href="https://www.youtube.com/watch?v=WjfaMl6-Tek">Michael Levin's CMSA talk </a> on it on our own and then talk about it in the group meeting. 
+                                </div>
+                            <hr>
+                            
+                            
+
+                            </ul><div style="clear:both;">
+                            </div> <!-- close talk_float div, and it needs to be cleared -->
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        
+                        </li>
+                        
+
+
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 10/13</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title">SPT, anomalies, and bordisms
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Leon</h3>
+                            <div style="clear: both;">
+                            Leon will talk about classificiation of anomalies and SPT, starting from group chomology to bordism invariants. 
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr> 
+
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+         
+                    
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 10/20</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title">Higher form symmetries
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Sal</h3>
+                            <div style="clear: both;">
+                                Sal will talk about what higher form symmetries are and do the examples of 1-form symmetry in toric code.
+                            </div>
+                            <hr> 
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 10/27</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Anyon Condensation
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Cameron</h3>
+                            <div style="clear: both;">
+                            Cam will talk about Anyon condensation following Kong's paper, together with example from Kitaev-Kong.
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 11/3</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Band theory and Euler class
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Abby</h3>
+                            <div style="clear: both;">
+                                Abby will talk about the Euler topology of band structures and how it characterizes nonabelian Weyl nodes.
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 11/10</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Topological entanglement entropy
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Arkya</h3>
+                            <div style="clear: both;">
+                            On Topological entanglement entropy.
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+                        
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 11/17</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Topological holographic duality
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Arkya</h3>
+                            <div style="clear: both;">
+                            Prep talk
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 11/31</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Dan Sandwich
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Leon</h3>
+                            <div style="clear: both;">
+                            Reviewed over Dan's CMSA talk on Dan's Sandwich.
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 12/8</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Automorphism of the Toric Code
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker">Cameron</h3>
+                            <div style="clear: both;">
+                            Talked about the Toric code, Honeycomb and how to get a family of gapped Hamiltonian that swaps e and m.
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+
+                        <!-- New Talk!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> 12/15</b>2022</li>
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            </ul>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            <h4 class="title"> Review
+                            </h4>
+                            <div style="clear: both;"></div>
+                            <h3 class="speaker"></h3>
+                            <div style="clear: both;">
+                            Review the semester and started the list of ideas for next year.
+                            </div>
+                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                            <hr>
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        </li>
+                                           </ul> 
+
+
+    </div>
+</body>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://leon2k2k2k.github.io//sitemap.xml

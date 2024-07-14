@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freed-Hopkins Reflecton Positivity</title>
+    <style type="text/css">
+/* 
+        dt, dd { display: inline-block; float: left; }
+        dt { clear: left; }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+        th {
+            text-align: left;
+        }
+
+        body {
+            margin-right: 50px;
+        } */
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            }
+
+            .sidenav a:hover {
+            color: #f1f1f1;
+            }
+            .boxed {
+            padding: 10px;
+            margin: 0 -1em;
+
+            /* outline:2px; */
+            border: 1px solid rgb(196, 159, 25) ;
+            border-width:5px;
+}
+            /* #tab table, th, td, tr {border: none;
+            border-collapse: collapse;} */
+
+    </style>
+    <link rel="stylesheet" href="juvitop_2017-9-20.css" type="text/css">
+</head>
+
+
+<body>
+    <div style="border-left: 60px solid rgb(22, 59, 103); padding: 0.5px; background-color: rgb(209, 210, 212);">
+
+    <div id="content">
+
+<h2>Reflection Positivity and Invertible Phases</h2>
+
+<h1>Spring 2022 (online)</h1>
+<hr>
+
+<!-- <h1>Overview:</h1> -->
+<p>This is a learning seminar about Freed-Hopkins's work on <a href="https://arxiv.org/abs/1604.06527">reflection positivity and invertible phases</a>. The current goal is to go through Freed's 
+    <a href="https://bookstore.ams.org/cbms-133/">CBSM book</a>, a draft of which can be found <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">here</a>.
+
+<p>The first half of the seminar will be quite math-heavy as we develop the necessary formalism. 
+    The second half will be focused on physical applications, 
+    namely recovering a ten fold way and the classification of topological insulators and superconductors 
+    (anomalies of free fermions). 
+    If there is more time, we may also go through some newer work on anomalies based on the results of Freed-Hopkins.
+</p>
+
+<p> This is organized by <a href='mailto: camkru@mit.edu'>Cameron Krulewski </a>and <a href='mailto: yuleonliu@math.harvard.edu'> Leon Liu</a>.</p>
+
+<p> The usual time for the seminar is <b>Mondays 3:00 PM - 4:00 EST</b>, and the zoom link is <a href="https://harvard.zoom.us/j/96550600773?pwd=TmJtMkxXWWZ1cEV1b3N1c0lVR24zZz09
+"> <b>here</b></a>. Dan's special talk will be <b>Friday Feb. 11th at 2:30 - 3:30 EST.</b> The talk may or may not 
+be recorded at the discretion of the speaker.</p>
+<hr>
+<!-- <h1>Schedule:</h1> -->
+
+        <ul id= "talks">
+
+            <li class="talk">
+                <ul class="meta">
+                <li class="date"><b> Jan 31</b>2022</li>
+                <!--
+                
+                    <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                
+                -->
+                </ul>
+                  
+                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-2"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-1">\begingroup</script> </div>
+                    <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                    
+                        
+                            <h4 class="title">Organization meeting</h4>
+                        
+                        <div style="clear: both;"></div>
+                    
+                    
+                        <h3 class="speaker">Leon and Cameron</h3>
+                        <div style="clear: both;">I will give a 15 minutes quick overview
+                        over the content of the paper and the notes. Then we will decide on logistics and sign up for talks.</div>
+                    
+                    
+                    
+                    
+                    </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-3" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-4"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-2">\endgroup</script> </div>
+                    
+                </li>
+
+             <li class="talk">
+                <div class="boxed">
+
+                <ul class="meta">
+                <li class="date"><b> Feb 11</b>2022</li>
+                <!--
+                
+                    <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                
+                -->
+                </ul>
+                  
+                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                    <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                    
+                        
+                            <h4 class="title">Overview and motivation. <a href="https://harvard.zoom.us/rec/share/eThl5At_v6LcYCZZYvN2PQslrrU5vQpPrh8ZZRFY5awlmCVc_hNYLTtL1dgNKJDK.XzZ9MlZXN-UqxJFl
+                                ">Video</a> </h4>
+                        
+                        <div style="clear: both;"></div>
+                    
+                    
+                        <h3 class="speaker">Dan Freed </h3>
+                        <div style="clear: both;"></div>
+                    
+                    
+                    
+                        <!-- <div class="notes"><h3>References:</h3>
+                <ul> -->
+                <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                <!-- </ul></div> -->
+                    
+                    
+                    </ul><div style="clear:both;">Prof. Freed is going to give a proper
+                    overview of/ motivation for their work. <b>Note that it is at a special time Friday Feb 11th at 2:30-3:30 EST.</b>
+                    </div> <!-- close talk_float div, and it needs to be cleared -->
+                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                </div>
+
+                </li>
+
+                <li class="talk">
+                    <ul class="meta">
+                    <li class="date"><b> Feb 14</b>2022</li>
+                    <!--
+                    
+                        <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                    
+                    -->
+                    </ul>
+                      
+                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                    Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                        
+                            
+                                <h4 class="title">Bordism and Topological Field Theories. <a href="https://harvard.zoom.us/rec/share/yxwTEzbIqE0uDwzeZrkSC7UaHn6xOmV5y7dKb2EYCX_5DCL5P9jCLoW6E6JKCmyl.2quqgRscm8uombKc">Video</a></h4>
+                            
+                            <div style="clear: both;"></div>
+                        
+                        
+                            <h3 class="speaker">Charlie Reid</h3>
+                            <div style="clear: both;"> We will first introduce bordism, and bordism invariants. Then we will categorify the story by defining the bordism category and Topological Field Theories. We will finish by talking about the Pontryagin-Thom theorem which converts the problem of finding bordism invariants into a problem in homotopy theory. This is a warm up for the categorified story where classification of invertible TQFTs can be achieved through homotopy theory. </div>
+                        
+                        
+                        
+                            <div class="notes"><h3>References:</h3>
+                    <ul>
+                        <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 1.</li>
+                        <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                            positivity and invertible phases</a> </li>
+                        <li>Debray. <a href="https://www.math.purdue.edu/~adebray/lecture_notes/bordism.pdf">Bordism and invertible field theory lecture notes</a></li>
+                        <li>Atiyah. <a href="http://www.numdam.org/article/PMIHES_1988__68__175_0.pdf">Topological quantum field theory</a></li>
+                        <li>Dijkgraaf, Witten. <a href="https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-129/issue-2/Topological-gauge-theories-and-group-cohomology/cmp/1104180750.full">Topological gauge theories and group cohomology</a></li>
+                        <li>Freed, Quinn. <a href="https://arxiv.org/abs/hep-th/9111004">Chern-Simons theory wth finite gauge groups.</a>
+                    <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                    <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                    <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                    </ul></div>
+                        
+                        
+                        </ul><div style="clear:both;">
+
+                        </div> <!-- close talk_float div, and it needs to be cleared -->
+                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                    
+                    </li>
+
+                    <li class="talk">
+                        <ul class="meta">
+                        <li class="date"><b> Feb 21</b>2022</li>
+                        <!--
+                        
+                            <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                        
+                        -->
+                        </ul>
+                          
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                            <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                        Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                            
+                                
+                                    <h4 class="title">Quantum Mechanics. <a href="https://harvard.zoom.us/rec/share/IHjXmGlOuM5vWqMe24UB4UD_SQxnZutcN2Qvdws462Hc3mRVARzBXW0upnNnFFU.KlVn5VOxFuKGLMgY">Video</a>
+
+                                    </h4>
+                                
+                                <div style="clear: both;"></div>
+                            
+                            
+                                <h3 class="speaker">Justin Kulp</h3>
+                                <div style="clear: both;">
+                                    I will provide a lightning fast review of quantum mechanics before describing gapped Hamiltonians and gapped "quantum systems." After this, I will move on to the (gapped) quantum phases and "space of theories" which are central to this seminar, and discuss their relationship to TFT. Time permitting, I will outline some features of Kitaev's Toric Code, following his original work, and then show how the pieces are formalized following Freed's notes.
+                                </div>
+                            
+                            
+                            
+                                <div class="notes"><h3>References:</h3>
+                        <ul>
+                            <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 2.</li>
+                            <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                positivity and invertible phases</a> section 3.1.</li>
+                            <li>Kitaev. <a href="https://arxiv.org/pdf/quant-ph/9707021.pdf">Fault-tolerant quantum computation by anyons</a> for Toric code.
+                        <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                        <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                        <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                        </ul></div>
+                            
+                            
+                            </ul><div style="clear:both;">
+                            </div> <!-- close talk_float div, and it needs to be cleared -->
+                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                        
+                        </li>
+
+                        <li class="talk">
+                            <ul class="meta">
+                            <li class="date"><b> Feb 28</b>2022</li>
+                            <!--
+                            
+                                <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                            
+                            -->
+                            </ul>
+                              
+                                <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                
+                                    
+                                    <h4 class="title">Wick-Rotated Quantum Field Theory. <a href="https://harvard.zoom.us/rec/share/XUoH2DvlzuMArscTRxTbRGevOEwI255eE3b7MwttkXOCr4JpeHMU16vnS1hGgqKY.Gx_rnC-xl90c8KzJ">Video</a>
+                                    </h4>
+                                    
+                                    <div style="clear: both;"></div>
+                                
+                                
+                                    <h3 class="speaker">Luuk Stehouwer</h3>
+                                    <div style="clear: both;">A prominent goal of Freed and Hopkins is to study relativistic QFT through the lens of TQFT. In this talk, we look for physically reasonable assumptions on the symmetries of a QFT on Minkowski space. We then study the resulting `symmetry type' after Wick-rotation to Euclidean signature. This provides the data we need to define the corresponding differential geometric structures on curved Riemannian spaces, which we will later use as an input to define TQFTs in the way we learned during talk 1. The main result in this section is a Coleman-Mandula type theorem: every symmetry type `almost' splits into a product of the internal symmetry group and the Lorentz group. We will pay extra attention to time-reversing symmetries, as they play a special role in relativistic QFT; they act anti-unitarily on Hilbert space and interplay with the positivity of energy. Special care has to be taken when Wick-rotating these structures, as they will be essential to define reflection-positivity in future talks. I will provide a construction of the resulting symmetry type and its extension to anti-unitary symmetries given the `spatially/nonrelativistically internal symmetry groups' that are often encountered in condensed matter physics.
+                                    </div>
+                                
+                                
+                                
+                                    <div class="notes"><h3>References:</h3>
+                            <ul>
+                                <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 3.</li>
+                                <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                    positivity and invertible phases</a> section 2, 3, Appendix A.</li>
+                                <li>Segal. <a href="https://www.mpim-bonn.mpg.de/node/3372">Felix Klein lectures 2011</a> video.
+                                <li>Freed, Moore. <a href="https://arxiv.org/abs/1208.5055"> Twisted equivariant matter.</a></li>
+                            <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                            <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                            <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                            </ul></div>
+                                
+                                
+                                </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                            
+                            </li>
+                            <li class="talk">
+                                <ul class="meta">
+                                <li class="date"><b> Mar 7</b>2022</li>
+                                <!--
+                                
+                                    <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                
+                                -->
+                                </ul>
+                                  
+                                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                    <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                    
+                                            
+                                            <h4 class="title">Classification Theorems. <a href="https://harvard.zoom.us/rec/share/l71fBcknR9GvqBgYuQCCepU43pWNkgvWsWDYI8FAk81yKAmIGLwJ2zDIBPpe9Le3.5bORbq0AoRqPAm1c
+">Video</a>
+                                            </h4>
+                                        
+                                        <div style="clear: both;"></div>
+                                    
+                                    
+                                        <h3 class="speaker">Leon Liu</h3>
+                                        <div style="clear: both;">As a warm up to our main theorem, we classify 1 dimensional field theories and 2 dimensional area-dependent field theories using Morse/Cerf theory. </div>
+                                    
+                                    
+                                    
+                                        <div class="notes"><h3>References:</h3>
+                                <ul>
+                                    <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 4.</li>
+                                    <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                        positivity and invertible phases</a> </li>
+                                <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                </ul></div>
+                                    
+                                    
+                                    </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                
+                                </li>
+                                <li class="talk">
+                                    <ul class="meta">
+                                    <li class="date"><b> Mar 14</b>2022</li>
+                                    <!--
+                                    
+                                        <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                    
+                                    -->
+                                    </ul>
+                                      
+                                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                    Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                        
+                                                
+                                                <h4 class="title">Extended Locality. <a href="https://harvard.zoom.us/rec/share/RcpjGfnrt6r36X92eMNvxXrY7pqxFyH4eWmgvUe9wPdX-Xdlhhd9z-T1vN2A4KC6.-NqrlZZpf_NYS_Jo
+">Video</a>
+                                                </h4>
+                                            
+                                            <div style="clear: both;"></div>
+                                        
+                                        
+                                            <h3 class="speaker">William Stewart</h3>
+                                            <div style="clear: both;">In this talk we will explore one of the two pillars of QFT: the notion of locality. We will demonstrate how this leads to the concept of an extended topological field theory. Along the way we will explore heuristically the concept of higher categories, which is the mathematical tool used to encode full locality. We will finish by exploring some of the structure of extended TQFTs and a powerful classification result: the cobordism hypothesis.​</div>
+                                        
+                                        
+                                        
+                                            <div class="notes"><h3>References:</h3>
+                                    <ul>
+                                        <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 5.</li>
+                                        <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                            positivity and invertible phases</a> section 5.1.</li>
+                                        <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/cobordism.pdf">The cobordism hypothesis</a></li>
+                                        <li>Lurie. <a href="https://people.math.harvard.edu/~lurie/papers/cobordism.pdf">On the classification of topological field theories.</a></li>
+                                        <li><a href="https://math.mit.edu/juvitop/pastseminars/2020_Fall.html">MIT Juvitop seminar fall 2020.</a></li>
+
+                                    <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                    <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                    <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                    </ul></div>
+                                        
+                                        
+                                        </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                    
+                                    </li>
+                                    <li class="talk">
+                                        <ul class="meta">
+                                        <li class="date"><b> Mar 21</b>2022</li>
+                                        <!--
+                                        
+                                            <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                        
+                                        -->
+                                        </ul>
+                                          
+                                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-2"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-1">\begingroup</script> </div>
+                                            <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                        Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                            
+                                                
+                                                    <h4 class="title">No talk</h4>
+                                                
+                                                <div style="clear: both;"></div>
+                                            
+                                            
+                                                <h3 class="speaker">Spring break</h3>
+                                                <div style="clear: both;"></div>
+                                            
+                                            
+                                            
+                                            
+                                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-3" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-4"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-2">\endgroup</script> </div>
+                                            
+                                        </li>
+                                    <li class="talk">
+                                        <ul class="meta">
+                                        <li class="date"><b> Mar 28</b>2022</li>
+                                        <!--
+                                        
+                                            <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                        
+                                        -->
+                                        </ul>
+                                          
+                                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                            <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                        Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                            
+                                                    
+                                                    <h4 class="title">Invertibility and Stable Homotopy Theory. <a href="https://harvard.zoom.us/rec/share/ZdXWMB175Bo8-iLSABt4EIuCNpJ3VvKMPgsqIY3EwLeLEfLYXsT3gfFEZncVGuQA.o2h8G-ZEcDvDfM2j">Video</a>
+
+                                                    </h4>
+                                                
+                                                <div style="clear: both;"></div>
+                                            
+                                            
+                                                <h3 class="speaker">Julius Frank</h3>
+                                                <div style="clear: both;">This talk is all about invertibility. We’ll see what it means for a topological field theory to be invertible and why we should care. On the technical side, we’ll be able to switch from higher categories to spectra, which are more amenable to computations. We’ll have a rough introduction to spectra, and then discuss the spectra which are involved with TFTs: For the domain, the bordism categories will be replaced by certain Thom spectra. For the target, we’ll suddenly have a canonical choice—this was not the case for non-invertible theories.
+                                                </div>
+                                            
+                                            
+                                            
+                                                <div class="notes"><h3>References:</h3>
+                                        <ul>
+                                            <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 6.</li>
+                                            <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                                positivity and invertible phases</a> section 5.2, 7.1. </li>
+                                            <li>Galatius, Madsen, Tillman, Weis. <a href="https://projecteuclid.org/journals/acta-mathematica/volume-202/issue-2/The-homotopy-type-of-the-cobordism-category/10.1007/s11511-009-0036-9.full"> 
+                                            The homotopy type of the cobordism category</a></li>
+                                            <li>Beaudry-Campell. <a href="https://arxiv.org/abs/1801.07530">A guide for computing stable homotopy groups</a>
+                                        <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                        <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                        <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                        </ul></div>
+                                            
+                                            
+                                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                        
+                                        </li>
+                                        <li class="talk">
+                                            <ul class="meta">
+                                            <li class="date"><b> Apr 06</b>2022</li>
+                                            <!--
+                                            
+                                                <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                            
+                                            -->
+                                            </ul>
+                                              
+                                                <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                                
+                                                        
+                                                        <h4 class="title">Wick-Rotated Unitarity
+                                                        </h4>
+                                                    
+                                                    <div style="clear: both;"></div>
+                                                
+                                                
+                                                    <h3 class="speaker">Natalia Pacheco-Tallaj</h3>
+                                                    <div style="clear: both;">We quickly review unitarity in QFT and then discuss reflection positivity, the manifestation of unitarity after Wick rotation, in the non-extended case.​
+                                                    </div>
+                                                
+                                                
+                                                
+                                                    <div class="notes"><h3>References:</h3>
+                                            <ul>
+                                                <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 7.</li>
+                                                <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                                    positivity and invertible phases</a> section 3 and Appendix A.</li>
+                                            <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                            <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                            <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                            </ul></div>
+                                                
+                                                
+                                                </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                                <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                            
+                                            </li>
+                                            <li class="talk">
+                                                <ul class="meta">
+                                                <li class="date"><b> Apr 11</b>2022</li>
+                                                <!--
+                                                
+                                                    <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                                
+                                                -->
+                                                </ul>
+                                                  
+                                                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                    <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                                Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                                    
+                                                            
+                                                            <h4 class="title">Extended Positivity and Stable Homotopy Theory. <a href="https://harvard.zoom.us/rec/share/v1O6J0tM8nl4ul-2QDtmFBlUZIFBW0SRrKHvrjm-2caMRoOttiP5wrpmekCZhq4i.Rx57XDHND2JjZHZ9
+                                                                ">Video</a>
+                                                            </h4>
+                                                        
+                                                        <div style="clear: both;"></div>
+                                                    
+                                                    
+                                                        <h3 class="speaker">Juan Moreno</h3>
+                                                        <div style="clear: both;">In this talk we will implement the notion of reflection positivity (Lecture 7) in the context of invertible extended TFTs (Lecture 6). This will require us to introduce some tools from Borel equivariant stable homotopy theory. The result is a determination of the homotopy type of the space of reflection positive invertible extended TFTs. ​</div>
+                                                    
+                                                    
+                                                    
+                                                        <div class="notes"><h3>References:</h3>
+                                                <ul>
+                                                    <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 8.</li>
+                                                    <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                                        positivity and invertible phases</a> 6, 7, 8.</li>
+                                                <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                                <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                                <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                                </ul></div>
+                                                    
+                                                    
+                                                    </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                                    <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                                
+                                                </li>
+                                                <li class="talk">
+                                                    <ul class="meta">
+                                                    <li class="date"><b> Apr 18</b>2022</li>
+                                                    <!--
+                                                    
+                                                        <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                                    
+                                                    -->
+                                                    </ul>
+                                                      
+                                                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                        <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                                    Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                                        
+                                                                
+                                                                <h4 class="title"> Non-Topological Invertible Field Theories
+                                                                </h4>
+                                                            
+                                                            <div style="clear: both;"></div>
+                                                        
+                                                        
+                                                            <h3 class="speaker">Arun Debray. <a href="https://www.math.purdue.edu/~adebray/video1583580719.mp4">Video</a></h3>
+                                                            <div style="clear: both;">Though Freed-Hopkins showed that reflection-positive invertible TFTs are classified by the torsion subgroup of [MTH, \Sigma^{n+1} IZ], they went further and conjectured that the entire group classifies reflection-positive invertible field theories that aren't necessarily topological. In this talk, we will discuss this conjecture and its relationship with differential cohomology. We will go over some examples including classical Chern-Simons theory.​​</div>
+                                                        
+                                                        
+                                                        
+                                                            <div class="notes"><h3>References:</h3>
+                                                    <ul>
+                                                        <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 9.</li>
+                                                        <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                                            positivity and invertible phases</a> </li>
+                                                        <li>Freed. <a href="https://arxiv.org/abs/1406.7278"> Short-ranged entanglement and invertible field theories</a></li>
+                                                        <li>Kitaev. <a href="http://scgp.stonybrook.edu/archives/7874">On the classification of short-ranged entangled states</a> video.</li>
+                                                    <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                                    <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                                    <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                                    </ul></div>
+                                                        
+                                                        
+                                                        </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                                        <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                                    
+                                                    </li>
+                                                    <li class="talk">
+                                                        <ul class="meta">
+                                                        <li class="date"><b> Apr 25</b>2022</li>
+                                                        <!--
+                                                        
+                                                            <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                                        
+                                                        -->
+                                                        </ul>
+                                                          
+                                                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                            <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                                        Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                                            
+                                                                    
+                                                                    <h4 class="title">Computations for Electron Systems. <a href="https://harvard.zoom.us/rec/share/Inp2SEQ__3ZVcFcCXMwnvvzrovqz_kiMsSh9IsUTqHYYD9scGWQ-ch7pnLF245UP.SM5HKfvNMr58zSJh">Video</a>
+                                                                    </h4>
+                                                                
+                                                                <div style="clear: both;"></div>
+                                                            
+                                                            
+                                                                <h3 class="speaker">Cameron Krulewski</h3>
+                                                                <div style="clear: both;"> </div>
+                                                            
+                                                            
+                                                            
+                                                                <div class="notes"><h3>References:</h3>
+                                                        <ul>
+                                                            <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 10.</li>
+                                                            <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                                                positivity and invertible phases</a> section 9.3.</li>
+                                                            <li>Kitaev. <a href="https://arxiv.org/abs/0901.2686">Periodic table for topological insulators
+                                                                and superconductors.</a></li>
+                                                        <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                                        <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                                        <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                                        </ul></div>
+                                                            
+                                                            
+                                                            </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                                            <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                                        
+                                                        </li>
+                                                        <li class="talk">
+                                                            <ul class="meta">
+                                                            <li class="date"><b> May 2</b>2022</li>
+                                                            <!--
+                                                            
+                                                                <li class="calendar"><a title="Add to Google Calendar" href=""></a></li> 
+                                                            
+                                                            -->
+                                                            </ul>
+                                                              
+                                                                <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-5" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-6"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">\begingroup</script> </div>
+                                                                <ul class="talk_float">  <!-- This ul is to make it so we can clear the title/abstract float without clearing the meta float.
+                                                                                            Clearing the meta float causes too big of a gap between the title and the name of the speaker-->    
+                                                                
+                                                                        
+                                                                        <h4 class="title">Anomalies in Field Theory
+                                                                        </h4>
+                                                                    
+                                                                    <div style="clear: both;"></div>
+                                                                
+                                                                
+                                                                    <h3 class="speaker">Sanath Devalapurkar/Leon Liu. <a href="https://harvard.zoom.us/rec/share/IN5wn-9YSXze1NkCF_L8kljVHI2UyQyjJnWNQCPMr5KVd_yPoqIyD2xs6lqp1qtL.UsOIkyF_70LmHYb0">Video</a>
+                                                                    </h3>
+                                                                    <div style="clear: both;"></div>
+                                                                
+                                                                
+                                                                
+                                                                    <div class="notes"><h3>References:</h3>
+                                                            <ul>
+                                                                <li>Freed. <a href="https://web.ma.utexas.edu/users/dafr/CBMS133.pdf">Lectures in field theory and topology</a> Lecture 11.</li>
+                                                                <li>Freed, Hopkins. <a href="https://arxiv.org/abs/1604.06527">Reflection 
+                                                                    positivity and invertible phases</a> </li>
+                                                                <li>Freed.  <a href="https://arxiv.org/abs/1404.7224">Anomalies and invertible field theories</a></li>
+                                                            <!-- <li><a href="http://arxiv.org/pdf/math/0410342.pdf">Kuhn, Goodwillie towers and chromatic homotopy: an overview</a>, sections 1-5</li> -->
+                                                            <!-- <li><a href="http://arxiv.org/pdf/math/0310481.pdf">Goodwillie, Calculus III: Taylor Series</a></li> -->
+                                                            <!-- <li><a href="http://www.math.harvard.edu/~lurie/papers/HA.pdf#chapter.6">Lurie, Higher Algebra</a>, sections 6.1.1 - 6.1.5</li> -->
+                                                            </ul></div>
+                                                                
+                                                                
+                                                                </ul><div style="clear:both;"></div> <!-- close talk_float div, and it needs to be cleared -->
+                                                                <div class="begroup">  <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; />" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 101%;"><span style="position: absolute; clip: rect(3.822em, 1000.004em, 4.247em, -999.996em); top: -4.028em; left: 0em;"><span class="mrow" id="MathJax-Span-8"></span><span style="display: inline-block; width: 0px; height: 4.035em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-4">\endgroup</script> </div>
+                                                            
+                                                            </li>
+
+                        
+        </ul>
+
+
+    </div>
+    </div>
+</body>
