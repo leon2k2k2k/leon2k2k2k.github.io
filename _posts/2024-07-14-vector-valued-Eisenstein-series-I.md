@@ -10,8 +10,8 @@ For the first series of post I want to talk about real-analytic Eisenstein serie
 
 Here's a rough list of topics:
 1. Various Eisenstein series.
-2. Spectral theory of automorphic forms. 
-3. Siegel-Weil formulas.
+3. Representation theoretic definition of Eisenstein series and continuous spectrum of automorphic forms. 
+4. Siegel-Weil formulas.
 4. Vector-valued generalizations.
 
 Other things to write about: Hecke operators.
