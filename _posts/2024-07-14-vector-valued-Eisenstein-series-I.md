@@ -16,7 +16,7 @@ Here's a rough list of topics:
 
 Other things to write about: Hecke operators.
 
-ß
+
 In this post we will review all the different type of Eisenstein series, from the simplest holomorphic Eisenstein series all the way up to weight $k$ real-analytic Eisenstein series. Much of it is from [here](https://math.berkeley.edu/~btw/small-eisenstein.pdf)
 
 
