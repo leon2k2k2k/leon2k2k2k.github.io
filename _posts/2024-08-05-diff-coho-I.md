@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Being confused about differential cohomology I
-date: 2024-08-07
-description: Various definitions of differential cohomology
+date: 2024-08-05
+description: Ordinary differential cohomology
 tags: mathematics, mathematical-physics
 categories:
 ---
@@ -106,7 +106,7 @@ Let's describe the maps:
 - $$\hatH^n(X; \mbb{Z}) \to \Omega^n_{\cl}(X)_{\mbb{Z}}$$ is given by $$(\omega, h) \mapsto \omega$$.
 - $$\hatH^n(X; \mbb{Z}) \to\hatH^n(X; \mbb{Z})$$ is given by $$(\omega, h) \mapsto (c \mapsto \int_c \omega - \tilde{h}(\partial c))$$. Here $$\tilde{h}$$ is a lift of $$h$$ to a morphism $$Z_{\infty, n-1}(X) \to \mbb{R}$$. Note that such map always exist as $$Z_{\infty, n-1}(X)$$ is free. It is straightforward to check that this is closed, and a different choice of $$\tilde{h}$$ differ by an exact cycle.
 
-In fact, there is a statement that map that satisfies the differential Hexagon are isomorphic to each other. I think its Sullivan-????.
+In fact, there is a statement that map that satisfies the differential Hexagon are isomorphic to each other. I think its [Simons-Sullivan](https://arxiv.org/abs/math/0701077).
 
 ## Deligne cohomology
 We have already met Deligne cohomologies, they are the $$\mbb{Z}(n)$$ groups before. The important thing is the the top degree recovers differential cohomology: 
@@ -131,3 +131,4 @@ Appearantly this is answered in [this paper](https://arxiv.org/abs/1311.3188), w
 ## References:
 - https://arxiv.org/abs/2109.12250. 
 - https://math.mit.edu/juvitop/pastseminars/notes_2019_Fall/cheeger-simons.pdf.
+- https://arxiv.org/abs/math/0701077
