@@ -134,7 +134,7 @@ j^{\perp}\coloneqq \mathrm{cofib}(i_* i^! \to \id).
 \begin{equation}
 ^{\perp}j \coloneqq \mathrm{fib}(id \to i^*i_*).
 \end{equation}
-3. The composite functoors 
+3. The composite functors 
 \begin{equation}
 Z^{\perp} \hookrightarrow X \xrightarrow{^\perp j} {^{\perp}Z }\quad \mathrm{and} \quad 
 {^{\perp}Z} \hookrightarrow X \xrightarrow{^{\perp} j} Z^{\perp}
@@ -175,13 +175,32 @@ Finally we are ready for the differential hexagon!!!
 Let $$\cF$$ be a $$\cC$$-valued sheaf on $$\Mfld$$. Then we have the differential Hexagon hexagon:
 $$\begin{equation}\label{eq:diff-hex-0}
 \begin{array}{ccccccccc}
-&   & R\cF &    &    &   & L\cF &  &  \\\
+&   & R\cF &    &  \rightarrow  &   & L\cF &  &  \\\
 & \nearrow& & \searrow   & & \nearrow & & \searrow & \\\
 \Sigma^{-1}L\Cyc(\cF) &  & & & \cF & & & & L\Cyc(\cF)\\\
 & \searrow& & \nearrow   & & \searrow & & \nearrow & \\\
-&   & \Def(\cF) & & & &  \Cyc(\cF) &  & 
+&   & \Def(\cF) & & \xrightarrow{d} & &  \Cyc(\cF) &  & 
 \end{array}
 \end{equation}$$
 Here the diagonals are fiber sequences, top and bottoms rows four maps are fiber sequences (plus one more term), and both squares are pullback square. In particular the right square is precisely the pullback square that's needed to glue.
 
-## Returning to ordinary differential cohomology!
+
+## Differential refinement:
+<b>Definition:</b> Let $$\cC$$ be a presentable stable $$\infty$$-category. A differential refinement of an object $$E \in \cC$$ is a pair $$(\hat{E}, \phi)$$ of a sheaf $$\hat{E} \in \Sh(\Mfld; \cC)$$ together with an equivalence $$\phi \colon \Gamma_{\#}(\hat{E}) \xrightarrow{\simeq} E$$ in $$\cC$$.
+
+By recollement, a differential refinement is equivalent to a pure sheaf $$\hat{P} \in \Sh_{\pu}(\Mfld; \cC)$$ together with a morphism $$E \to \Gamma_{\#}(\hat{P})$$ in $$\cC$$. In this case, the corresponding differential refinement is the pullback 
+$$\begin{equation}
+\begin{array}[ccc]
+   x \hat{E} & \rightarrow & \hat{P} \\\ 
+   \downarrow & & \downarrow \\\ 
+   \Gamma^*(E) & \rightarrow & \Gamma^* \Gamma_{\#}(\hat{P}).
+\end{array}
+\end{equation}$$
+In this case 
+1. $$\Def(\hat{E}) \xrightarrow{\simeq} \Def(\hat{P})$$. 
+2. $$\Cyc(\hat{E}) \xrightarrow{\simeq} \hat{P}$$.
+3. We have a fiber sequence 
+$$\begin{equation}
+\Gamma_{*}(\hat{E}) \to E \to \Gamma_{\#}(\hat{P}).
+\end{equation}$$
+Note that we can pullback differential refinement along maps in $$\cC$$. In this next post we are going to use this machinary to construct spectral lifts of differential cohomologies.
