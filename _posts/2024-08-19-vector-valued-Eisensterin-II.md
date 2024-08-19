@@ -34,7 +34,7 @@ A function $$f$$ is a *cusp form* if the constant term vanishes $$\cp f = 0$$. A
 
 We are going to turn $$\cp$$ into a part of an adjunction. To do that we need pairings. For $$H$$ a subgroup of $$G$$ and nice functions $$f, F$$ (not necessarily from the same space of functions), consider the pairing:
 $$\begin{equation}
-<f, H>_{H\backslash \mbb{H}} = \int_{H \backslash \mbb{H}} f \cdot F
+\langle f, H\rangle_{H\backslash \mbb{H}} = \int_{H \backslash \mbb{H}} f \cdot F
 \end{equation}$$
 note that this is complex linear thus *not* hermitian.
 
@@ -42,7 +42,7 @@ Now we can define the adjunct of $$\cp$$, via the pairing for $$H = \Gamma$$ and
 <b>Definition:</b> Let $$\psi$$ be a compactly supported function on $$N \backslash \mbb{H}$$, we define $$\Psi_{\psi}$$, the psuedo-Eisenstein series associated to $$\psi$$, to be the modular invariant function such that for every modular invariant functino $$f$$, we have 
 $$
 \begin{equation}\label{eq:adj-formula}
-<\cp f, \psi>_{N\backslash \mbb{H}} = <f, \Psi_{\psi}>_{\Gamma \backslash \mbb{H}}.
+\langle \cp f, \psi\rangle_{N\backslash \mbb{H}} = \langle f, \Psi_{\psi}\rangle_{\Gamma \backslash \mbb{H}}.
 \end{equation}$$
 Note that the invariant measure on $$N\backslash \mbb{H}$$ is $$dy/y^2$$.
 
@@ -93,7 +93,10 @@ There is a couple things to point out:
 3. We are also interested in general $$\sigma$$ for $$\sigma < 1$$.
 
 Let's first consider point 2. Using \eqref{eq:adj-formula}, we see that 
-$$<E_s, f>_{\Gamma\backslash \mbb{H}} = <y^s, \cp f>_{N\backslash \mbb{H}} = M(\cp f)(1-s)$$. 
+$$
+\begin{equation}\label{eq:Es-pairing}
+\langle E_s, f\rangle_{\Gamma\backslash \mbb{H}} = \langle y^s, \cp f\rangle_{N\backslash \mbb{H}} = M(\cp f)(1-s). 
+\end{equation}$$ 
 Note that the $$1$$ in $$1-s$$ comes from the fact that the integral in $$N\backslash \mbb{H}$$ is $$\frac{dy}{y^2}$$ rather than the multiplicative $$\frac{dy}{y}$$. To me this seems to be a very important fact. 
 
 ## Functional equation of Eisenstein series
@@ -112,5 +115,62 @@ E_{1-s} \Lambda((1-s)/2) = E_s \Lambda(s/2)
 Note that also $$E_{\overline{s}} = \overline{E}_s$$. In particular we see that $$c_s$$ doesn't vanish on the line $$\Re(s) = 1/2$$ and $$E_{1/2 + it}$$ is a special line!
 
 Let's take a look at the zeroes and poles of $$E_s$$. To start, recall that the completed zeta function $$\Lambda(s)$$ has pole at $$s = 1$$ and zeros at the non-trivial zeroes $$z_k$$ of the Riemann zeta function. Looking at \eqref{eq:constant-piece-of-Es}, we see that problem arises when $$2s - 1 = 1$$ or $$2s = z_k$$, hence $$E_s$$ has poles at $$s = 1$$ and $$s = z_k/2$$. Furthermore, the pole at $$s = 1$$ has a constant residue, which as we will see plays a major role later.
+
+
+## Harmonic decomposition
+Now we are going to re-write \eqref{eq:helper-1} to get a harmonic decomposition.
+First we would like to write this in terms of $$\Psi_{\psi}$$ instead of $$\psi$$.
+
+First we move the integral to $$\sigma = 1/2 + it$$, recall that we get one pole of $$E_s$$ at $$s=1$$. We will return to this later and simply write it as $$\Res$$ for now.
+$$\begin{equation}\label{eq:harmonic-decomp-1}
+\Psi_{\psi} - \Res = \frac{1}{2\pi i} \int_{1/2 - i \infty}^{1/2 + i \infty} M\psi(s) E_s ds.
+\end{equation}$$
+By \eqref{eq:constant-piece-of-Es} and \eqref{eq:Es-pairing}, we have 
+$$\begin{equation}\label{eq:helper-2}
+M(\cp\Psi_{\psi})(s) = \langle E_{1-s}, \Psi_{\psi}\rangle = M\psi(s) + c_{1-s}M\psi(1-s).
+\end{equation}$$
+Going back to \eqref{eq:harmonic-decomp-1}, we can use the functional equation \eqref{eq:Es-func-eq}, i.e. $$E_{1-s} = c_{1-s}E_s$$ to obsorb the second  term in 
+\eqref{eq:helper-2}. This means that \eqref{eq:harmonic-decomp-1} can be written as 
+$$\begin{align}
+\Psi_{\psi} - \Res &= \frac{1}{2\pi i} \int_{1/2 - i \infty}^{1/2 + i \infty} M\psi(s) E_s ds\\
+&= \frac{1}{2\pi i} \int_{1/2 + i0}^{1/2 + i \infty} M\psi(s) E_s + M\psi(1-s) E_{1-s} ds\\
+&= \frac{1}{2\pi i}\int_{1/2+i0}^{1/2+ i \infty}M(\cp \Psi_{\psi}(s))E_s ds
+\end{align}
+$$
+Note that this only works for $$s = 1/2 + it$$ as it is the line invariant under $$s \mapsto 1-s$$. Furthermore, using the fact that $$E_{\overline{s}} = \overline{E_s}$$, we have 
+$$
+\begin{equation}
+\Psi_{\psi} - \Res = \frac{1}{4\pi i}\int_{1/2 - i \infty}^{1/2 + i \infty} \langle \Psi_{\psi}, E_s\rangle \cdot E_s ds
+\end{equation}$$
+where $$\langle -,-\rangle$$ is the *complex-hermitian pairing* where we conjugate the second factor.
+
+Now let's get to the residue part. Recall that the only pole of $$E_s$$ in the half-plane $$\Re(s) \geq 1/2$$ is at $$s = 1$$, it is a simple pole with value $$\frac{3}{\pi}$$, as we will see, this is the volume of $$\Gamma\backslash \mbb{H}$$.
+Thus 
+$$
+\begin{align}
+\Res = M\psi(1) \cdot \res_{s=1}E_s = \int_0^{\infty} \psi(y) \frac{dy}{y} = \int_{N\backslash \mbb{H}}\psi(y)\frac{dy}{y^2} = \int_{\Gamma_{\infty}\backslash \mbb{H}} \psi(z) \frac{dx\, dy}{y^2}\\
+ = \int_{\Gamma\backslash \mbb{H}}\sum_{\gamma \in \Gamma_{\infty}\backslash \Gamma} \psi(z)  = \int_{\Gamma\backslash \mbb{H}} \Psi_{\psi} \frac{dx\, dy}{y^2} = \langle  \Psi_{\psi}, 1\rangle.
+\end{align}
+$$
+Therefore we see that $$M\psi(1)$$ is the inner product of $$\Psi_{\psi}$$ with the constant function $$1$$. That's great! This is telling us that we also get the constant functions.
+
+To summarize, we get a harmonic decomposition theorem:
+
+<b>Theorem:</b>
+Let $$f$$ be a square-integrable function orthgonal to the cuspforms, then we have an $$L^2$$ equality:
+$$
+\begin{equation}
+f =_{L^2} \frac{1}{4\pi i}\int_{1/2 - i\infty}^{1/2+ i\infty} \langle f, E_s \rangle \cdot E_s ds + \frac{\langle f,1\rangle \cdot 1}{\langle 1, 1\rangle}.
+\end{equation}
+$$
+Tah dah!
+
+
+
+
+
+
+
+
 
 
