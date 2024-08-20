@@ -167,6 +167,11 @@ Tah dah!
 
 
 
+<br><br>
+<br>
+
+## References:
+- https://www-users.cse.umn.edu/~garrett/m/mfms/notes_2013-14/13_1_cont_afc_spec.pdf. 
 
 
 
