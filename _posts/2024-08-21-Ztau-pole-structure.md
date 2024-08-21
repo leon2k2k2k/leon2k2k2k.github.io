@@ -6,6 +6,8 @@ description: Harmonic analysis of 2D CFTs I
 tags: mathematics, modular forms, mathematical physics, 2D CFTs
 categories:
 ---
+<span style="color:red">I might be misssing a factor of $$2$$ for the energy $$\Delta$$!!</span>
+
 In this post we are going to explore the pole structures when decomposing the scalar primary partition function of Narain CFTs using Eisenstein series. This is the content of appendix A of [this](https://arxiv.org/pdf/2208.02259).
 Let $$\mu$$ be a point in the Narain moduli space, with associated energy $$H$$ and momentum $$P$$. In our parameterization, given $$(n,m) \in \mbb{Z}^c$$, the momentum $$P(n,m)$$ is the dot product $$2 n \cdot m$$. 
 $$
@@ -36,24 +38,69 @@ Note that the subtractin of the $$1$$ term comes from $$E_{\frac{c}{2}}(\tau)$$.
 Now let us consider the constant piece, which by definition doesn't have contribution from the cusp forms. 
 To do this, we simply integrate $$Z^c(\tau, \mu)$$ over the strip $$-1/2 < x < 1/2$$:
 $$\begin{equation}
-\int_{-1/2}^{1/2}dx Z^c(\tau, \mu) = y^{c/2} (1 + \sum_{\Delta \in S}e^{-\pi y \Delta})
+\int_{-1/2}^{1/2}dx Z^c(\tau, \mu) = y^{\frac{c}{2}} (1 + \sum_{\Delta \in S}e^{-\pi y \Delta})
 \end{equation}$$
 where $$S$$ is the set of non-trival scalar primary operators and $$\Delta$$ is the dimension. Since we know the constant piece of $$E_s$$, and that $$\nu_k$$ has no constant piece.
 
 \eqref{eq:Zc-harmonic-decomp} implies the following:
-$$\begin{align}
-\int_{-1/2}^{1/2}dx \,Z^c(\tau, \mu) &= y^{c/2} + \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-\frac{c}{2}} + 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) \\ 
+$$\begin{align}\label{eq:eq-1}
+\int_{-1/2}^{1/2}dx \,Z^c(\tau, \mu) &= y^{\frac{c}{2}} + \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-\frac{c}{2}} + 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) \\ 
 &+ \frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, y^s.
 \end{align}$$
 We are interested in moving this integral to $$\Re(s) > \frac{c}{2}$$.
+The claim is that the only poles we are going to hit is $$s = \frac{c}{2}, \frac{1 + z_k}{2}$$, where $$z_k$$ is the non-trivial zeros of the Riemann zeta function. Showing this is the goal of the post:
+
+## Pole structures
+Dividing by $$y^{\frac{c}{2}}$$ and elimintate the constant term, we have the following: 
+$$\begin{align}\label{eq:eq-2}
+\sum_{\Delta \in S}e^{-\pi y \Delta} &= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-c} + 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) y^{-\frac{c}{2}}\\ 
+&+ \frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, y^{s - \frac{c}{2}}.
+\end{align}$$
+
+To derive the pole structure, the idea is to use the discreteness of the spectrum. In particular, there is a gap above the groundstate. 
+
+Now the idea is to use the Laplace transform, which we now review. 
+Let $$\rho(t)$$ be the density function for scalar primaries:
+$$\begin{equation}
+\rho(t) = \sum_{\Delta' \in S}\delta_{\pi \Delta', t}.
+\end{equation}$$
+
+Let $$f(t)$$ be a function on $$(0, \infty)$$, then the *Laplace transform* $$\cL(f)(s)$$ is the function 
+$$\begin{equation}
+\cL(f)(s) \coloneqq \int_0^{\infty} f(t)e^{-ty} dy.
+\end{equation}$$
+By construction, the Laplace transform $$\cL(\rho)$$ is precisely the primary counting partition function $$\sum_{\Delta \in S}e^{-\pi y \Delta}$$.
+
+Now we are going to perform inverse Laplace transform to the right hand side of  \eqref{eq:eq-2}, this is easy as the only $$y$$ dependence is of the form $$y^{s}$$. Note that the Laplace transform of $$t^s$$ is $$\frac{\Gamma(s+1)}{y^{s+1}}$$. Conversely, the inverse Laplace transform $$\cL^{-1}(y^s) = \frac{1}{\Gamma(-s)t^{(s+1)}}$$.
+
+So we have 
+$$\begin{align}\label{eq:eq-3}
+\rho(t) = \cL^{-1}(\sum_{\Delta \in S}e^{-\pi y \Delta})
+&= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} \frac{t^{c-2}}{\Gamma(c-1)}\\
+&+ 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu)
+\frac{t^{\frac{c}{2}-1}}{\Gamma(\frac{c}{2})}\\
+&+ 
+\frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, \frac{t^{\frac{c}{2}-s-1}}{\Gamma(\frac{c}{2}-s)}.
+\end{align}$$
+
+
+
+Let $$N_0(t) = \int_{0}^{t}\rho(t') dt'$$ be the simple function that counts the number of scalar primaries with energy $$\leq \Delta = \pi t$$. Note that the existence of a gap above the groundstate implies that there exists an $$\epsilon$$ such that $$N_0(t) = 0$$ for $$t \leq \epsilon$$. 
+Using \eqref{eq:eq-3}, we can simply compute $$N_0(t)$$:
+$$\begin{align}
+&\frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} \frac{t^{c-1}}{(c-1)\Gamma(c-1)}\\
+&+ 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu)
+\frac{t^{\frac{c}{2}}}{\frac{c}{2}\Gamma(\frac{c}{2})}\\
+&+ 
+\frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, \frac{t^{\frac{c}{2}-s}}{(\frac{c}{2}-2)\Gamma(\frac{c}{2}-s)}.
+\end{align}$$
+
+When we take $$\Delta = 2 \pi t$$ and expand out $$\Lambda$$, we get the following:
+$$\begin{align}
+N_0(\Delta) &= \frac{2\pi^c\zeta(c-1)\Delta^{c-1}}{(c-1)\zeta(c)\Gamma(c-1)}
+\end{align}$$
 
 
 
 
-
-
-
-
-
-
-
+<span style="color:red">Let's finish this tomorrow</span>
