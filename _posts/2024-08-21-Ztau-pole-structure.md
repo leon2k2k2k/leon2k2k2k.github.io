@@ -44,7 +44,7 @@ where $$S$$ is the set of non-trival scalar primary operators and $$\Delta$$ is 
 
 \eqref{eq:Zc-harmonic-decomp} implies the following:
 $$\begin{align}\label{eq:eq-1}
-\int_{-1/2}^{1/2}dx \,Z^c(\tau, \mu) &= y^{\frac{c}{2}} + \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-\frac{c}{2}} + 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) \\ 
+\int_{-1/2}^{1/2}dx \,Z^c(\tau, \mu) &= y^{\frac{c}{2}} + \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-\frac{c}{2}} + 3\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) \\ 
 &+ \frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, y^s.
 \end{align}$$
 We are interested in moving this integral to $$\Re(s) > \frac{c}{2}$$.
@@ -53,7 +53,7 @@ The claim is that the only poles we are going to hit is $$s = \frac{c}{2}, \frac
 ## Pole structures
 Dividing by $$y^{\frac{c}{2}}$$ and elimintate the constant term, we have the following: 
 $$\begin{align}\label{eq:eq-2}
-\sum_{\Delta \in S}e^{-\pi y \Delta} &= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-c} + 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) y^{-\frac{c}{2}}\\ 
+\sum_{\Delta \in S}e^{-\pi y \Delta} &= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-c} + 3\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu) y^{-\frac{c}{2}}\\ 
 &+ \frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, y^{s - \frac{c}{2}}.
 \end{align}$$
 
@@ -77,7 +77,7 @@ So we have
 $$\begin{align}\label{eq:eq-3}
 \rho(t) = \cL^{-1}(\sum_{\Delta \in S}e^{-\pi y \Delta})
 &= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} \frac{t^{c-2}}{\Gamma(c-1)}\\
-&+ 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu)
+&+ 3\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu)
 \frac{t^{\frac{c}{2}-1}}{\Gamma(\frac{c}{2})}\\
 &+ 
 \frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, \frac{t^{\frac{c}{2}-s-1}}{\Gamma(\frac{c}{2}-s)}.
@@ -88,19 +88,55 @@ $$\begin{align}\label{eq:eq-3}
 Let $$N_0(t) = \int_{0}^{t}\rho(t') dt'$$ be the simple function that counts the number of scalar primaries with energy $$\leq \Delta = \pi t$$. Note that the existence of a gap above the groundstate implies that there exists an $$\epsilon$$ such that $$N_0(t) = 0$$ for $$t \leq \epsilon$$. 
 Using \eqref{eq:eq-3}, we can simply compute $$N_0(t)$$:
 $$\begin{align}
-&\frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} \frac{t^{c-1}}{(c-1)\Gamma(c-1)}\\
-&+ 2\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu)
-\frac{t^{\frac{c}{2}}}{\frac{c}{2}\Gamma(\frac{c}{2})}\\
+&\frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} \frac{t^{c-1}}{\Gamma(c)}\\
+&+ 3\pi^{-\frac{c}{2}}\,\Gamma(\frac{c}{2} - 1)\, \mcal{E}^c_{\frac{c}{2}-1}(\mu)
+\frac{t^{\frac{c}{2}}}{\Gamma(\frac{c}{2}+1)}\\
 &+ 
-\frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, \frac{t^{\frac{c}{2}-s}}{(\frac{c}{2}-2)\Gamma(\frac{c}{2}-s)}.
+\frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, \frac{t^{\frac{c}{2}-s}}{\Gamma(\frac{c}{2}-s+1)}.
 \end{align}$$
 
 When we take $$\Delta = 2 \pi t$$ and expand out $$\Lambda$$, we get the following:
 $$\begin{align}
-N_0(\Delta) &= \frac{2\pi^c\zeta(c-1)\Delta^{c-1}}{(c-1)\zeta(c)\Gamma(c-1)}
+N_0(\Delta) &= \frac{2\pi^c\zeta(c-1)\Delta^{c-1}}{(c-1)\zeta(c)\Gamma(\frac{c-1}{2})^2\zeta(c)}\\
+&+ 12 \frac{2^\frac{c}{2}\Delta^{\frac{c}{2}}\mcal{E}^c_{\frac{c}{2}-1}(\mu)}{c (c-2)}\\
+&+ \frac{1}{2\pi i}\int_{\frac{1}{2} - i \infty}^{\frac{1}{2} + i\infty}ds\, \frac{2^{\frac{c}{2} - s}\Delta^{\frac{c}{2} - s}\mcal{E}^c_{\frac{c}{2} - s}(\mu)}{\frac{c}{2}-s}
+\end{align}$$
+Note that for the first line we used the Legendre duplication formula
+$$\begin{equation}
+\Gamma(z)\Gamma(z +\frac{1}{2}) = 2^{1-2z}\sqrt{\pi}\Gamma(2z).
+\end{equation}
+$$
+
+Now using the functional equation on $$\mcal{E}^c_{s}$$ on the integrade, and the fact that it needs to cancel the first two terms, we arrive at the fact that $$\mcal{E}^c_{\frac{c}{2}+s-1}$$ has poles at $$s = \frac{z_n}{2}$$ where $$z_n$$ is a non-trivial zero of the Zeta function.
+Moreoever, to cancel out the first term we see that $$\mcal{E}^c_0(\mu) = -1$$.
+
+Look into the paper for this argument. 
+
+Now going back to the integrand of \eqref{eq:eq-2}, there are a pole coming from $$\Gamma(\frac{c}{2}-s)$$ at $$s = \frac{c}{2}$$, and poles at $$s = 1 - \frac{z_n}{2}$$, equivalently $$s = \frac{1 + z_n}{2}$$ by the functional equation of the zeta function. This completes the claim.
+Now we are going to move the integral to the right on \eqref{eq:eq-2}. Note that the pole at $$s = \frac{c}{2}$$ simply contributes to the constant term $$-1$$, we can move to the left hand side of \eqref{eq:eq-2}. Thus we get the following:
+$$\begin{align}\label{eq:eq-4}
+1 + \sum_{\Delta \in S}e^{-\pi y \Delta} &= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} y^{1-c} + 
+\epsilon_c(\mu)y^{-\frac{c}{2}}\\ 
+&+ \sum_{k=1}^{\infty}\Re(\delta_{k,c}(\mu)y^{-\frac{c}{2}+\frac{1+z_k}{2}})\\
+&+ \frac{1}{2\pi i}\int_{\gamma - i \infty}^{\gamma+ i\infty}ds\, \pi^{s-\frac{c}{2}}\,\Gamma(\frac{c}{2}-s)\,\mcal{E}^c_{\frac{c}{2}-s}(\mu)\, y^{s - \frac{c}{2}}.
+\end{align}$$
+Here $$\gamma > \frac{c}{2}$$. 
+Here we have $$\mu$$-dependent residues:
+$$
+\begin{align}
+\epsilon_c(\mu) &= \frac{3}{\pi}\int_{\Gamma\backslash \mbb{H}}\frac{dx dy}{y^2} (Z^c(\tau, \nu) - E_{\frac{c}{2}}(\tau)), \\ 
+\delta_{k,c}(\mu) &= \int_{\Gamma\backslash \mbb{H}}\frac{dx dy}{y^2}(Z^c(\tau, \nu) - E_{\frac{c}{2}}(\tau)) \Res_{s = \frac{z_k}{2}}E_s(\tau)
+\end{align}
+$$
+
+The integrand is going to integrate to something of the form $$O(e^{\frac{-2\pi n^2 \Delta}{y}})$$. Lastly, take $$T = y^{-1}$$, and we exaimine the high temperature before of the scalar primary partition function, we get the (5.1) of the paper:
+$$\begin{align}\label{eq:eq-5}
+1 + \sum_{\Delta \in S}e^{\frac{-2\pi \Delta}{T}} &= \frac{\Lambda(\frac{c-1}{2})}{\Lambda(\frac{c}{2})} T^{c-1} + 
+\epsilon_c(\mu)T^{\frac{c}{2}}\\ 
+&+ \sum_{k=1}^{\infty}T^{\frac{c}{2} - \frac{3}{4}}
+[\Re(\delta_{k,c}) \cos(\Im(z_k) \log T) - \Im(\delta_{k,c})\sin(\Im(z_k) \log T)]\\
+&+ O(e^{-2\pi\Delta_{\mathrm{gap}}T})
 \end{align}$$
 
 
 
-
-<span style="color:red">Let's finish this tomorrow</span>
