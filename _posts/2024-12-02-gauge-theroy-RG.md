@@ -30,6 +30,7 @@ The idea is also quite simple, to get from a ultra-violet length scale $\Lambda_
 $\Lambda_{IR}$, we need to integrate over all interactions that occurs between those length scale. 
 We typically do this infinitesimally as well as perturbatively, i.e., count Feynmann diagrams by the order of the loops. 
 
+
 ## The engineering dimension
 Starting at the zero-loop, which is also the ''classical'' level, we are simply looking at the dimension of the coupling constant. Recall the in a QFT we set $c = 1$ and $\hbar = 1$, leaving us with a single unit of dimension, which is $L = E^{-1}$. 
 
@@ -43,4 +44,7 @@ The computation done in (1) is a one-loop computation, which we now turn to.
 
 \TODO{two things: either go to ghosts and anti-fields.}
 
-## The one-loop computation.
+## Renormalization at 1-loop
+To do this
+
+## I would like to complete this at a later stage, but I am moving forward right now. I am following David Tong gauge theory notes, which itself is following probably Peskin-Schroeder. Peskin-Schroeder also talks about how to do those integrals. In particular the ghost contribution is similar to problem 9.1, which is the point where I stopped.
