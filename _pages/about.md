@@ -27,14 +27,9 @@ I am a researcher working on machine learning, with a focus on reasoning, interp
 
 <br>
 
-## Research Interests
-
-My primary interest is building AI systems that reason well and that we can understand and trust. My work spans automated reasoning for mathematics, reinforcement learning for post-training language models, and interpretability and alignment. I am especially drawn to oversight: methods for understanding what a model is computing internally and steering its behavior toward what we intend. My background in mathematics shapes how I approach these problems.
-
-<br>
-
 ## Projects
 
+{% comment %} hidden for now, restore later
 **Autonomous Mathematical Research Agent** &nbsp; <em>(private)</em><br>
 An agent that attacks open problems in mathematics through generate-and-verify loops, with an external-LLM verification service and multi-model campaign orchestration. Produced a new result on an open Erdős problem and improvements on several others.<br>
 [<a href="/erdos153_corrected.pdf">writeup</a>] [<a href="/erdos819.pdf">writeup</a>] [<a href="/erdos327.pdf">writeup</a>]
@@ -45,16 +40,20 @@ With the Albergo lab at Harvard: studying a token-commitment phase transition in
 **Parameter Golf (OpenAI Model Craft Challenge)** &nbsp; <em>(open source)</em><br>
 An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post-run audits) that cut experiment iteration time roughly 5x. A recurrence-band mixing variant beat the then-SOTA on validation bits-per-byte by 3 sigma across 3 seeds.<br>
 [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>] [<a href="https://github.com/openai/parameter-golf/pull/1801">PR #1801</a>]
+{% endcomment %}
 
-**LLM Post-Training with GRPO / RLVR** &nbsp; <em>(research)</em><br>
-Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and built diagnostic evals. Outcome-only reward raised the addition/subtraction set from 25% to 87% but suppressed multiplication, a case of strategy narrowing rather than broad capability gain.
+**LLM Post-Training with GRPO and SFT** &nbsp; <em>(Reinforcement Learning)</em><br>
+Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from 54% to 94% (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract pass@1 to 71% (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
+[<a href="/blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/">writeup</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
 
+{% comment %} hidden for now, restore later
 **Agent Skills** &nbsp; <em>(open source)</em><br>
 A public toolkit of production-tested skills for AI coding agents (external-LLM review loops, proof-verification loops, paper reading, LaTeX writeups), usable across Claude Code, Codex, Gemini CLI, and Cursor.<br>
 [<a href="https://github.com/leon2k2k2k/agent-skills">code</a>]
 
 **Quant and Agentic Systems** &nbsp; <em>(industry)</em><br>
 C++ orderbook and execution-backtesting infrastructure at a stealth high-frequency trading startup; and an LLM-driven C++ optimization pipeline (dependency-DAG analysis plus agentic implementation gated by tests and benchmarks, around 1.5x speedups) as an agentic engineering intern.
+{% endcomment %}
 
 <br>
 
