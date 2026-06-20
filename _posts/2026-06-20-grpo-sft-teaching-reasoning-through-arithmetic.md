@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GRPO, SFT, and teaching reasoning through arithmetic
-date: 2026-06-21
+date: 2026-06-20
 description: What GRPO and SFT can and cannot teach a 3B model about arithmetic reasoning, measured on the Countdown task.
 tags: reinforcement-learning, reasoning, GRPO, SFT
 categories: machine-learning
