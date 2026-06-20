@@ -42,9 +42,16 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
 [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>] [<a href="https://github.com/openai/parameter-golf/pull/1801">PR #1801</a>]
 {% endcomment %}
 
-**LLM Post-Training with GRPO and SFT** &nbsp; <em>(Reinforcement Learning)</em><br>
-Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from 54% to 94% (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract pass@1 to 71% (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
-[<a href="/blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/">writeup</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
+<div class="row align-items-center" style="margin-bottom: 1.2rem;">
+  <div class="col-sm-4 mb-2 mb-sm-0">
+    <a href="/blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/"><img src="/assets/img/grpo/grpo_dynamics.png" class="img-fluid rounded z-depth-1" alt="GRPO training dynamics: accuracy up, response length down then up"></a>
+  </div>
+  <div class="col-sm-8">
+    <strong>LLM Post-Training with GRPO and SFT</strong> &nbsp; <em>(Reinforcement Learning)</em><br>
+    Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from 54% to 94% (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract pass@1 to 71% (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
+    [<a href="/blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/">writeup</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
+  </div>
+</div>
 
 {% comment %} hidden for now, restore later
 **Agent Skills** &nbsp; <em>(open source)</em><br>
