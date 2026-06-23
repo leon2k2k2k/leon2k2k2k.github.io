@@ -42,6 +42,12 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
 [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>] [<a href="https://github.com/openai/parameter-golf/pull/1801">PR #1801</a>]
 {% endcomment %}
 
+<p style="margin-bottom: 1.2rem;">
+  <strong>Autonomous Mathematical Research Agent</strong> &nbsp; <em>(research)</em><br>
+  Built on Rethlas: a generate-and-verify pipeline that autonomously attacks open problems, with an external-LLM verification service, frozen-world / blind-source integrity enforcement, and multi-model campaign orchestration. Produced new bounds and partial results on several open Erdős problems (#153, #301, #327, #675(a), #819), each reviewed and cross-checked through the verification loop.<br>
+  [<a href="/erdos/">Erdős writeups</a>]
+</p>
+
 <div class="row align-items-center" style="margin-bottom: 1.2rem;">
   <div class="col-sm-4 mb-2 mb-sm-0">
     <a href="/blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/"><img src="/assets/img/grpo/grpo_dynamics.png" class="img-fluid rounded z-depth-1" alt="GRPO training dynamics: accuracy up, response length down then up"></a>
