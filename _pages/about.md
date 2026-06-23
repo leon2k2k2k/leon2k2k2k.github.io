@@ -42,11 +42,13 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
 [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>] [<a href="https://github.com/openai/parameter-golf/pull/1801">PR #1801</a>]
 {% endcomment %}
 
+{% comment %} hidden from the web for now, restore later
 <p style="margin-bottom: 1.2rem;">
   <strong>Autonomous Mathematical Research Agent</strong> &nbsp; <em>(research)</em><br>
   Built on Rethlas: a generate-and-verify pipeline that autonomously attacks open problems, with an external-LLM verification service, frozen-world / blind-source integrity enforcement, and multi-model campaign orchestration. Produced new bounds and partial results on several open Erdős problems (#153, #301, #327, #675(a), #819), each reviewed and cross-checked through the verification loop.<br>
   [<a href="/erdos/">Erdős writeups</a>]
 </p>
+{% endcomment %}
 
 <div class="row align-items-center" style="margin-bottom: 1.2rem;">
   <div class="col-sm-4 mb-2 mb-sm-0">
@@ -56,6 +58,17 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
     <strong>LLM Post-Training with GRPO and SFT</strong> &nbsp; <em>(Reinforcement Learning)</em><br>
     Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from 54% to 94% (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract pass@1 to 71% (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
     [<a href="/blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/">writeup</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
+  </div>
+</div>
+
+<div class="row align-items-center" style="margin-bottom: 1.2rem;">
+  <div class="col-sm-4 mb-2 mb-sm-0">
+    <a href="/blog/2026/improving-one-small-model-depth-recurrence/"><img src="/assets/img/paramgolf/alpha_trajectory.png" class="img-fluid rounded z-depth-1" alt="Mixing coefficients converging from different initializations"></a>
+  </div>
+  <div class="col-sm-8">
+    <strong>Parameter Golf: Depth-Recurrence in Small-Model Pretraining</strong> &nbsp; <em>(pretraining)</em><br>
+    Starting from a strong depth-recurrent small-model pretraining recipe, we learned the per-pass mixing coefficients in its loop band, found they converge to the same values regardless of initialization, and froze them as constants, <strong>improving validation BPB from 1.06549 to 1.06421, a roughly 3-sigma gain across 3 seeds</strong>, at zero size cost. We also audited a validation-data leak across the leaderboard and analyzed a sub-1.0-BPB scoring exploit. This was part of OpenAI's Parameter Golf, a six-week competition to build the best language model under a 16 MB, 10-minute budget; we wrote up the competition itself separately.<br>
+    [<a href="/blog/2026/improving-one-small-model-depth-recurrence/">writeup</a>] [<a href="/blog/2026/parameter-golf-six-weeks-to-build-the-best-llm/">competition writeup</a>] [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>]
   </div>
 </div>
 

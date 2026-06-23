@@ -8,7 +8,7 @@ nav_order: 4
 
 My PhD was in mathematical physics and topology, often at the interface between the two. I worked on field theories and anomalies, knot homologies, and homotopy theory, using tools from algebraic topology and higher category theory to study structures in quantum field theory such as anomalies, symmetry breaking, and dualities.
 
-Over the course of my PhD I wrote around ten papers with collaborators across mathematics and physics. You can find the full list on the <a href="/publications/">papers</a> page.
+Over the course of my PhD, I wrote around ten papers with collaborators across mathematics and physics. You can find the full list on the <a href="/publications/">papers</a> page. More recently, I produced new results on several open Erdős problems using an autonomous research pipeline built on Rethlas and Codex. [<a href="/erdos/">Erdős writeups</a>]
 
 <br>
 
