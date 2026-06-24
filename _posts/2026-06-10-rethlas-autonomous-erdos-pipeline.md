@@ -65,17 +65,25 @@ For the top-tier problems, #708 has a sharp known lower bound and explicit parti
 
 We do not need the per-problem reasoning to act on this; we keep the two top tiers, the score-4 and score-5 problems, which leaves nine candidates.
 
-We hand the nine to the pool manager. The command for this run is:
+We hand the nine to the pool manager. A run is one campaign config; this one is:
 
-```bash
-python3 scripts/run_pipeline.py --attack \
-    --problems 708,709,700,704,706,710,719,725,726 \
-    --model gpt-5.5 --effort xhigh --attempts 3 --concurrency 5
+```yaml
+# campaigns/erdos_pool.yaml
+mode: pool
+concurrency: 5            # problems attacked at once; the queue auto-advances
+model: gpt-5.5            # prover + verifier model
+reasoning_effort: xhigh   # thinking depth
+max_attempts: 3           # draft -> verify -> repair cycles per problem
+problems: [erdos_708, erdos_709, erdos_700, erdos_704, erdos_706, erdos_710, erdos_719, erdos_725, erdos_726]
 ```
 
-Those four flags are the whole knob set. `--model gpt-5.5` and `--effort xhigh` set the model and reasoning level used by both the prover and the verifier. `--attempts 3` is the retry budget: each problem gets up to three full draft -> verify -> repair cycles before we give up on it. `--concurrency 5` keeps five problems in flight at once. So this run launches all nine problems, five at a time, each in its own isolated workspace, and each one either produces a verified blueprint within three attempts or is dropped.
+```bash
+python3 pipeline.py pool campaigns/erdos_pool.yaml
+```
 
-In practice we rarely drive these steps by hand. Typically an AI agent, for example Claude Code, operates the pipeline end to end: triaging, proposing a shortlist, launching the pool, and reporting the results back to us. To make that easy, the repository ships memory and skill files, so an agent like that can pick up the whole workflow with almost no setup.
+Those knobs are the whole control surface. `model` and `reasoning_effort` set the model and thinking depth used by both the prover and the verifier. `max_attempts` is the retry budget: each problem gets up to three full draft -> verify -> repair cycles before we give up on it. `concurrency` keeps five problems in flight at once. So this run launches all nine problems, five at a time, each in its own isolated workspace, and each one either produces a verified blueprint within three attempts or is dropped.
+
+In practice we rarely drive these steps by hand. Typically an AI agent, for example Claude Code, operates the pipeline end to end: triaging, proposing a shortlist, launching the pool, and reporting the results back to us. To make that easy, the repository ships a memory file (a `CLAUDE.md`), so an agent like that can pick up the whole workflow with almost no setup.
 
 
 ## Novel results
