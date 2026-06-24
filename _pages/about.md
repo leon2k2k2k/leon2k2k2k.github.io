@@ -32,7 +32,7 @@ I am a researcher working on machine learning, with a focus on reasoning, interp
 {% comment %} hidden for now, restore later
 **Autonomous Mathematical Research Agent** &nbsp; <em>(private)</em><br>
 An agent that attacks open problems in mathematics through generate-and-verify loops, with an external-LLM verification service and multi-model campaign orchestration. Produced a new result on an open Erdős problem and improvements on several others.<br>
-[<a href="/erdos153_corrected.pdf">writeup</a>] [<a href="/erdos819.pdf">writeup</a>] [<a href="/erdos327.pdf">writeup</a>]
+[<a href="/assets/pdf/erdos/erdos153.pdf">writeup</a>] [<a href="/assets/pdf/erdos/erdos819.pdf">writeup</a>] [<a href="/assets/pdf/erdos/erdos327.pdf">writeup</a>]
 
 **Phase Transitions in Flow Language Models** &nbsp; <em>(research)</em><br>
 With the Albergo lab at Harvard: studying a token-commitment phase transition in continuous simplex flows for text. The transition is sharp and geometric, and matches interpolant theory on a trained model.
