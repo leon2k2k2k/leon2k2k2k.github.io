@@ -83,7 +83,7 @@ python3 pipeline.py pool campaigns/erdos_pool.yaml
 
 Those knobs are the whole control surface. `model` and `reasoning_effort` set the model and thinking depth used by both the prover and the verifier. `max_attempts` is the retry budget: each problem gets up to three full draft -> verify -> repair cycles before we give up on it. `concurrency` keeps five problems in flight at once. So this run launches all nine problems, five at a time, each in its own isolated workspace, and each one either produces a verified blueprint within three attempts or is dropped.
 
-In practice we rarely drive these steps by hand. Typically an AI agent, for example Claude Code, operates the pipeline end to end: triaging, proposing a shortlist, launching the pool, and reporting the results back to us. To make that easy, the repository ships a memory file (a `CLAUDE.md`), so an agent like that can pick up the whole workflow with almost no setup.
+In practice we rarely drive these steps by hand. Typically an AI agent, for example Claude Code, operates the pipeline end to end: triaging, proposing a shortlist, launching the pool, and reporting the results back to us. To make that easy, the [repository](https://github.com/leon2k2k2k/Rethlas) ships a memory file (a `CLAUDE.md`), so an agent like that can pick up the whole workflow with almost no setup.
 
 
 ## Novel results
@@ -112,4 +112,8 @@ We end with a few comments and lessons.
 
 3. The Codex subscription gives us gpt-5.5, not gpt-5.5 Pro, the stronger and much more expensive model most people reach for in math research. So the results here sit on the cheaper tier, a floor rather than a ceiling.
 
-4. By far the easiest way to orchestrate all of this is to drive the repo through a coding harness, using its skills and memory, which also keeps the whole thing interactive for the user.
+4. By far the easiest way to orchestrate all of this is to drive the repo through a coding harness, using its memory file, which also keeps the whole thing interactive for the user.
+
+## The code
+
+The runner is open source at [github.com/leon2k2k2k/Rethlas](https://github.com/leon2k2k2k/Rethlas), so you can try it yourself: clone it, point it at the problems you care about, and it attacks them. The easiest way to drive it is to open it in an AI coding harness like Claude Code, which reads the included `CLAUDE.md` and runs the whole workflow for you. The five featured results, with source and PDFs, are on the [solutions page](https://leon2k2k2k.github.io/erdos/).
