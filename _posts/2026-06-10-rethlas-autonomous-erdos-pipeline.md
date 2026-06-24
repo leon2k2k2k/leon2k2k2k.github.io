@@ -22,8 +22,6 @@ The progress of AI in mathematics has been incredible. In just a few years the m
 I got really curious and wanted to try my hand at this too. When the group at Peking University (frenzymath) released Rethlas, the agent they had used to disprove the [Anderson conjecture](https://arxiv.org/abs/2604.03789), I wanted to use it to see which Erdős problems we could attack. From what I can tell, most people doing this are working through the OpenAI chat interface, or calling a model like GPT-5.5 directly, mostly one problem at a time. What I wanted to try was different: what happens if you run it at massive scale, attacking many, many problems at once? In this post we share the pipeline for doing this, as well as the results we got.
 
 
-## The code
-
 The runner is open source at [github.com/leon2k2k2k/Rethlas](https://github.com/leon2k2k2k/Rethlas), so you can try it yourself: clone it, point it at the problems you care about, and it attacks them. The easiest way to drive it is to open it in an AI coding harness like Claude Code, which reads the included `CLAUDE.md` and runs the whole workflow for you. The five featured results, with source and PDFs, are on the [solutions page](https://leon2k2k2k.github.io/erdos/).
 
 ## What is Rethlas
