@@ -63,6 +63,17 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
 
 <div class="row align-items-center" style="margin-bottom: 1.2rem;">
   <div class="col-sm-4 mb-2 mb-sm-0">
+    <a href="/posts/2026/rethlas-autonomous-erdos-pipeline/"><img src="/assets/img/rethlas/pipeline_flow.png" class="img-fluid rounded z-depth-1" alt="The pipeline, with the Rethlas generate-verify kernel boxed"></a>
+  </div>
+  <div class="col-sm-8">
+    <strong>Autonomous Math Agent on Erdős Problems | AI for Math</strong><br>
+    Built a pipeline that triages and attacks open Erdős problems at scale on top of the Rethlas generate-and-verify agent. It produced new bounds and partial results on five open problems (#153, #301, #327, #675(a), #819).<br>
+    [<a href="/posts/2026/rethlas-autonomous-erdos-pipeline/">writeup</a>] [<a href="/erdos/">solutions</a>] [<a href="https://github.com/leon2k2k2k/Rethlas">repo</a>] [<a href="https://www.erdosproblems.com/forum/user/leon2k2k2k">erdosproblems.com</a>]
+  </div>
+</div>
+
+<div class="row align-items-center" style="margin-bottom: 1.2rem;">
+  <div class="col-sm-4 mb-2 mb-sm-0">
     <a href="/posts/2026/improving-one-small-model-depth-recurrence/"><img src="/assets/img/paramgolf/alpha_trajectory.png" class="img-fluid rounded z-depth-1" alt="Mixing coefficients converging from different initializations"></a>
   </div>
   <div class="col-sm-8">
