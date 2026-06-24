@@ -5,7 +5,7 @@ layout: post
 title: RG flow of 4D gauge theory
 date: 2024-12-02
 description: 
-tags: physics, high-energy-physics, gauge-theroy
+tags: [physics, high-energy-physics, gauge-theroy]
 categories:
 ---
 Four dimension gauge theories are some of the most subtle parts of high energy physics. One of the things that I have been wanting to throughly understand is the famous one loop determinant calculation of the beta function for 4D gauge theory:

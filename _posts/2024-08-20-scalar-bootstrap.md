@@ -5,7 +5,7 @@ layout: post
 title: Harmonic analysis of Narain partition function
 date: 2024-08-20
 description: Harmonic analysis of 2D CFTs
-tags: mathematics, physics, modular-forms, mathematical-physics, 2d-cfts
+tags: [mathematics, physics, modular-forms, mathematical-physics, 2d-cfts]
 categories:
 ---
 In this post we visit this two papers: [Harmonic analysis of 2d CFT partition functions](https://arxiv.org/pdf/2107.10744) and [Scalar modular boostrap and zeros of the Riemann zeta function](https://arxiv.org/pdf/2208.02259). There is a whole wealth of literature on this subject, mostly in the view of quantum gravity and ensemble averaging. We will get to discuss some of this today, from a more mathematical perspective. I am not sure how much physics we will get to.

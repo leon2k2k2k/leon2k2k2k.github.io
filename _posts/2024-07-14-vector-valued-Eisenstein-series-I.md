@@ -5,7 +5,7 @@ layout: post
 title: Various Eisenstein series
 date: 2024-07-13
 description: Eisenstein series I
-tags: mathematics, modular-forms
+tags: [mathematics, modular-forms]
 categories:
 ---
 For the first series of post I want to talk about real-analytic Eisenstein series and their vector-valued generalization. The motivation is to understand the ensemble average/3D quantum gravity aspects of [this paper](https://arxiv.org/abs/2311.00699), which has been on my bucket list for while now.

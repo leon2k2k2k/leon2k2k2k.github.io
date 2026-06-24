@@ -5,7 +5,7 @@ layout: post
 title: Pole structure of harmonic decomposition of Narain scalar primary
 date: 2024-08-21
 description: Harmonic analysis of 2D CFTs I
-tags: mathematics, physics, modular-forms, mathematical-physics, 2d-cfts
+tags: [mathematics, physics, modular-forms, mathematical-physics, 2d-cfts]
 categories:
 ---
 <span style="color:red">I might be misssing a factor of $$2$$ for the energy $$\Delta$$!!</span>

@@ -5,7 +5,7 @@ layout: post
 title: "Improving one small model: a deep look at depth-recurrence in 10-minute pretraining"
 date: 2026-05-10
 description: We take one depth-recurrent language model from a 10-minute pretraining competition and try three ways to improve it. Two fail cleanly; the third, learning a mixing rule and then freezing it, ships.
-tags: machine-learning, pretraining, depth-recurrence, language-models, parameter-golf
+tags: [machine-learning, pretraining, depth-recurrence, language-models, parameter-golf]
 categories: machine-learning
 thumbnail: assets/img/paramgolf/alpha_trajectory.png
 toc:
