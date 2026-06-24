@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2024/diff-coho-III/
 layout: post
 title: Being confused about differential cohomology III 
 date: 2024-08-07
 description: Building differential cohomology
-tags: mathematics, mathematical-physics
+tags: mathematics, physics, mathematical-physics
 categories:
 ---
 

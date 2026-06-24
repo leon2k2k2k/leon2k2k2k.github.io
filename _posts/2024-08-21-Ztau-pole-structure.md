@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2024/Ztau-pole-structure/
 layout: post
 title: Pole structure of harmonic decomposition of Narain scalar primary
 date: 2024-08-21
 description: Harmonic analysis of 2D CFTs I
-tags: mathematics, modular forms, mathematical physics, 2D CFTs
+tags: mathematics, physics, modular-forms, mathematical-physics, 2d-cfts
 categories:
 ---
 <span style="color:red">I might be misssing a factor of $$2$$ for the energy $$\Delta$$!!</span>

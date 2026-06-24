@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2026/improving-one-small-model-depth-recurrence/
 layout: post
 title: "Improving one small model: a deep look at depth-recurrence in 10-minute pretraining"
-date: 2026-06-22
+date: 2026-05-10
 description: We take one depth-recurrent language model from a 10-minute pretraining competition and try three ways to improve it. Two fail cleanly; the third, learning a mixing rule and then freezing it, ships.
-tags: pretraining depth-recurrence language-models parameter-golf
+tags: machine-learning, pretraining, depth-recurrence, language-models, parameter-golf
 categories: machine-learning
 thumbnail: assets/img/paramgolf/alpha_trajectory.png
 toc:
@@ -37,7 +39,7 @@ x → block_0 → block_1 → block_2 → [ block_3 → block_4 → block_5 ] ×
 The recurrence is meant to build better representations from the limited number of parameters we are allowed. However, it comes at a heavy time cost: the loop layers run two extra times, which is roughly 6 extra layer-equivalents on top of the baseline 11. This drops the throughput from about 8.0M tokens/s before the loop to about 5.49M tokens/s. That is a 31% drop in throughput.
 Is the loop worth that cost? Holding the seed and schedule fixed and turning the recurrence off, the no-loop run completes more steps but trains to a worse validation BPB. The loop earns its cost.
 
-<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/loss_curve.png" alt="Loop vs no-loop training loss" style="max-width:620px;width:100%;height:auto;border-radius:6px"></div>
+<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/loss_curve.png" alt="Loop vs no-loop training loss" style="max-width:100%;width:100%;height:auto;border-radius:6px"></div>
 
 *Figure 1: same seed and schedule, loop versus no loop. The no-loop run gets more steps (the loop is expensive) but the looped run trains to a lower loss and a better validation BPB.*
 
@@ -45,7 +47,7 @@ Because it is expensive, the recipe does not run the loop from the beginning; it
 
 Another important piece is the learning-rate schedule, which has three phases. A short warmup ramps the rate from 0 up to its peak, which we will call LR1. It holds at LR1 only briefly. Then a long warmdown takes over for the final three quarters of training, decaying the rate linearly from LR1 back down to 0 at the end. The loop kicks in at fraction 0.35, just after the warmdown has begun, so by the time the recurrence turns on the rate has already left its LR1 peak and is on its way down.
 
-<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/lr_schedule_model.png" alt="Learning-rate schedule with loop activation marked" style="max-width:640px;width:100%;height:auto;border-radius:6px"></div>
+<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/lr_schedule_model.png" alt="Learning-rate schedule with loop activation marked" style="max-width:100%;width:100%;height:auto;border-radius:6px"></div>
 
 *Figure 2: the learning-rate schedule. A short warmup from 0 to the peak LR1, a brief hold, then a long warmdown decaying from LR1 to 0 over the final three quarters. The dashed line marks where the loop activates, frac 0.35, just after the warmdown begins.*
 
@@ -71,7 +73,7 @@ Putting in $$N_0 = 6500$$:
 
 The predicted totals roughly track the observed counts, but the trade does not pay off. Those extra steps do not buy a better model: the no-loop run has the most steps and the worst BPB, while across the whole looped sweep the validation BPB moves by only about 0.002, with no real trend in timing. So timing the loop is not a useful lever.
 
-<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/041-comparison.png" alt="No-loop vs early vs late loop activation" style="max-width:620px;width:100%;height:auto;border-radius:6px"></div>
+<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/041-comparison.png" alt="No-loop vs early vs late loop activation" style="max-width:100%;width:100%;height:auto;border-radius:6px"></div>
 
 *Figure 3: no loop versus early activation versus late activation, with the activation steps marked. Later activation gives more total steps, but not a better model.*
 
@@ -113,14 +115,14 @@ One detail: we apply a stop-gradient (a detach) to the carried terms $$x_k^{(j)}
 
 When we train the models, we notice something interesting: once the loop activates, the coefficients drift off their initialization and settle into a stable pattern within a few hundred steps, and the pattern is nearly independent of initialization: runs started from $$\alpha=0$$ and from $$\alpha=1$$ converge to the same values.
 
-<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/alpha_trajectory.png" alt="Alpha coefficients converging from different inits" style="max-width:760px;width:100%;height:auto;border-radius:6px"></div>
+<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/alpha_trajectory.png" alt="Alpha coefficients converging from different inits" style="max-width:100%;width:100%;height:auto;border-radius:6px"></div>
 
 *Figure 5: the alpha coefficients from runs started at different initializations all converge to the same values once the loop activates. The learned pattern is a property of the model, not of the starting point.*
 
 
 It is also worth looking at what the loop chose to learn. Every $$\beta$$ comes out well above 1, so each pass amplifies its own block output rather than damping it; the optimizer chose to overshoot the plain recurrent rule. The cross-layer terms are structured too: layer 4 learns a self-subtract gate (its own coefficient settles near -0.35), and layer 5 acts as an aggregator, leaving itself roughly alone while absorbing a chunk of layer 4.
 
-<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/beta_over_time.png" alt="Beta coefficients over training" style="max-width:560px;width:100%;height:auto;border-radius:6px"></div>
+<div style="text-align:center;margin:1.4em 0"><img src="/assets/img/paramgolf/beta_over_time.png" alt="Beta coefficients over training" style="max-width:760px;width:100%;height:auto;border-radius:6px"></div>
 
 *Figure 6: the per-pass beta coefficients over training, starting at 1 and drifting once the loop activates. Nearly all settle above 1, so each pass amplifies its own output.*
 
@@ -136,4 +138,4 @@ Later on, we also tried a slightly different variant of the same idea: an Anders
 
 ## Extra: more from this competition
 
-This was one thread of a longer competition, and the rest of it had some genuinely strange moments. There was a scoring exploit where a byte-level blend posted a sub-1.0 BPB that blew away the honest frontier while not actually being a valid probability distribution over bytes ([PR #1905](https://github.com/openai/parameter-golf/pull/1905)). And there was a validation-data leak that ran quietly across much of the leaderboard, where a default in the data-prep script put most of the validation documents into the training set ([Issue #2127](https://github.com/openai/parameter-golf/issues/2127)). We wrote those up separately; the full competition writeup is [here](/blog/2026/parameter-golf-six-weeks-to-build-the-best-llm/).
+This was one thread of a longer competition, and the rest of it had some genuinely strange moments. There was a scoring exploit where a byte-level blend posted a sub-1.0 BPB that blew away the honest frontier while not actually being a valid probability distribution over bytes ([PR #1905](https://github.com/openai/parameter-golf/pull/1905)). And there was a validation-data leak that ran quietly across much of the leaderboard, where a default in the data-prep script put most of the validation documents into the training set ([Issue #2127](https://github.com/openai/parameter-golf/issues/2127)). We wrote those up separately; the full competition writeup is [here](/posts/2026/parameter-golf-six-weeks-to-build-the-best-llm/).

@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2026/parameter-golf-six-weeks-to-build-the-best-llm/
 layout: post
 title: "Parameter Golf: Six Weeks to Build the Best LLM"
 date: 2026-05-08
 description: An account of OpenAI's Parameter Golf competition. Six weeks, two thousand pull requests, and a 14% compression improvement wrung from the same hardware, the same data, and the same ten minutes of training.
-tags: language-models pretraining parameter-golf competition
+tags: machine-learning, language-models, pretraining, parameter-golf, competition
 categories: machine-learning
 thumbnail: assets/img/paramgolf/competition_hero_clean.png
 toc:

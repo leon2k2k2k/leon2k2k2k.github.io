@@ -95,10 +95,6 @@ GEM
     jekyll-get-json (1.0.0)
       deep_merge (~> 1.2)
       jekyll (>= 3.0)
-    jekyll-imagemagick (1.4.0)
-      jekyll (>= 3.4)
-    jekyll-jupyter-notebook (0.0.6)
-      jekyll
     jekyll-link-attributes (1.0.1)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
@@ -108,6 +104,8 @@ GEM
       uglifier (~> 4.1)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-regex-replace (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
@@ -138,8 +136,6 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     latex-decode (0.4.0)
-    libv8-node (21.7.2.0-aarch64-linux)
-    libv8-node (21.7.2.0-x86_64-linux)
     liquid (4.0.4)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -150,8 +146,6 @@ GEM
     matrix (0.4.2)
     mercenary (0.4.0)
     mini_mime (1.1.5)
-    mini_racer (0.12.0)
-      libv8-node (~> 21.7.2.0)
     minitest (5.24.1)
     multi_xml (0.7.1)
       bigdecimal (~> 3.1)
@@ -203,11 +197,10 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-feed
   jekyll-get-json
-  jekyll-imagemagick
-  jekyll-jupyter-notebook
   jekyll-link-attributes
   jekyll-minifier
   jekyll-paginate-v2
+  jekyll-redirect-from
   jekyll-regex-replace
   jekyll-scholar
   jekyll-sitemap
@@ -215,7 +208,6 @@ DEPENDENCIES
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
-  mini_racer
   unicode_utils
   webrick
 

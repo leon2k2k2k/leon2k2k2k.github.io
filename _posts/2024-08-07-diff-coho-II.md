@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2024/diff-coho-II/
 layout: post
 title: Being confused about differential cohomology II 
 date: 2024-08-07
 description: From recollement on differential cohomology to differential Hexagons
-tags: mathematics, mathematical-physics
+tags: mathematics, physics, mathematical-physics
 categories:
 ---
 

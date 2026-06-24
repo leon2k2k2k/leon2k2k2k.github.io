@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2024/diff-coho-I/
 layout: post
 title: Being confused about differential cohomology I
 date: 2024-08-05
 description: Ordinary differential cohomology
-tags: mathematics, mathematical-physics
+tags: mathematics, physics, mathematical-physics
 categories:
 ---
 

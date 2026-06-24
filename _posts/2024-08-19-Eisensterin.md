@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2024/Eisensterin/
 layout: post
 title: Pseudo-Eisenstein series, functional equations, and poles
 date: 2024-08-19
 description: Eisenstein series II
-tags: mathematics, modular forms
+tags: mathematics, modular-forms
 categories:
 ---
 In this note we are going to review how Eisenstein series (the weight $$0$$ trivial MTCs ones) naturally comes from the study of scalar piece of modular functions. Using this, we are going to establish basic facts about the Eisenstein series, functional equations, harmonic decompositions, and pole structures.

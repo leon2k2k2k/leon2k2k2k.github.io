@@ -1,9 +1,11 @@
 ---
+redirect_from:
+  - /blog/2026/grpo-sft-teaching-reasoning-through-arithmetic/
 layout: post
 title: GRPO, SFT, and teaching reasoning through arithmetic
 date: 2026-06-20
 description: What GRPO and SFT can and cannot teach a 3B model about arithmetic reasoning, measured on the Countdown task.
-tags: reinforcement-learning, reasoning, GRPO, SFT
+tags: machine-learning, reinforcement-learning, reasoning, grpo, sft
 categories: machine-learning
 thumbnail: assets/img/grpo/grpo_dynamics.png
 toc:
@@ -238,6 +240,25 @@ tries, whereas GRPO-alone produces four to eight.
 
 Multiplication dies for the same reason it never appeared under GRPO-alone. SFT's
 multiplication was mostly wrong arithmetic (the worked steps read fine but compute the wrong product), so it fails the verifier, and GRPO prunes whatever fails.
+
+
+## Scaling up with slime
+
+Every result here came from a deliberately small setup: one H100, four rollouts per
+problem, a 1024-token budget, 300 iterations. That ceiling matters for the failure we kept
+hitting. GRPO can only reinforce a correct multiplication if at least one rollout in a group
+produces one, and with four samples on a problem the base solves roughly 1% of the time, the
+whole group comes back uniformly wrong and contributes no gradient.
+
+The next step is to lift that ceiling rather than change the algorithm, and for that we plan
+to move the RL loop onto [slime](https://github.com/THUDM/slime), Zhipu's open-source
+post-training framework for RL scaling. slime pairs Megatron-LM for training with SGLang for
+rollout generation, with asynchronous weight synchronization between them; it is the same
+stack Zhipu uses to post-train the GLM series. Concretely it buys us three things this study
+lacked: many more rollouts per problem (more chances for a rare correct multiply to land and
+survive the verifier), longer reasoning budgets, and a clean path to larger base models. Each
+of those targets the exact mechanism behind the zero-multiplication collapse, so it is the
+natural place to test whether the gap is fundamental or just starved for samples.
 
 
 ## Lessons

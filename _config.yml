@@ -134,7 +134,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: posts # blog_name will be displayed in your blog page
 blog_description: Notes and writeups on mathematics and machine learning.
-permalink: /blog/:year/:title/
+permalink: /posts/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -258,11 +258,12 @@ plugins:
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  # - jekyll-imagemagick
+  # - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
+  - jekyll-redirect-from
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
@@ -301,11 +302,11 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+    year: "/posts/:year/"
+    tag: "/posts/tag/:name/"
+    category: "/posts/category/:name/"
 
-display_tags: [ "math", "physics"] # these tags will be displayed on the front page of your blog
+display_tags: [ "mathematics", "physics", "machine-learning"] # these tags will be displayed on the front page of your blog
 # display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
