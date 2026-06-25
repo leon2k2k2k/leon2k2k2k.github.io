@@ -56,7 +56,7 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
   </div>
   <div class="col-sm-8">
     <strong>LLM Post-Training with GRPO and SFT | Reinforcement Learning</strong><br>
-    Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from 54% to 94% (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract pass@1 to 71% (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
+    Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from <strong>54% to 94%</strong> (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract <strong>pass@1 to 71%</strong> (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
     [<a href="/posts/2026/grpo-sft-teaching-reasoning-through-arithmetic/">writeup</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
   </div>
 </div>
@@ -67,7 +67,7 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
   </div>
   <div class="col-sm-8">
     <strong>Autonomous Math Agent on Erdős Problems | AI for Math</strong><br>
-    Built a pipeline that triages and attacks open Erdős problems at scale on top of the Rethlas generate-and-verify agent. It produced new bounds and partial results on five open problems (#153, #301, #327, #675(a), #819).<br>
+    Built a pipeline that triages and attacks open Erdős problems at scale on top of the Rethlas generate-and-verify agent. It produced new bounds and partial results on five open problems (<strong>#153, #301, #327, #675(a), #819</strong>).<br>
     [<a href="/posts/2026/rethlas-autonomous-erdos-pipeline/">writeup</a>] [<a href="/erdos/">solutions</a>] [<a href="https://github.com/leon2k2k2k/Rethlas">repo</a>] [<a href="https://www.erdosproblems.com/forum/user/leon2k2k2k">erdosproblems.com</a>]
   </div>
 </div>
