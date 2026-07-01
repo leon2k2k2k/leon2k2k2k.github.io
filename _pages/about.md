@@ -52,12 +52,23 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
 
 <div class="row align-items-center" style="margin-bottom: 1.2rem;">
   <div class="col-sm-4 mb-2 mb-sm-0">
+    <a href="/posts/2026/steering-for-truth-and-for-lies/"><img src="/assets/img/truth-steering/alpha_ablation_table.svg" class="img-fluid rounded z-depth-1" alt="Qwen2.5-14B truth steering alpha ablation table"></a>
+  </div>
+  <div class="col-sm-8">
+    <strong>Steering for Truth, and for Lies | Interpretability</strong><br>
+    Can we steer LLMs to be more honest or more deceptive, inspired by Apollo's honesty probe? Using Qwen2.5 models, I found a practical recipe: middle-layer all-token steering moved roleplay and AI-liar completions toward disclosure under positive steering, and toward deception under negative steering. On the 14B combined roleplay/AI-liar run, the deceptive score moved from <strong>5.82</strong> at alpha 0 to <strong>1.55</strong> at alpha +5, while alpha -3 moved it to <strong>7.86</strong>. We also compare activation steering with direct honest/deceptive prompting.<br>
+    [<a href="/posts/2026/steering-for-truth-and-for-lies/">post</a>]
+  </div>
+</div>
+
+<div class="row align-items-center" style="margin-bottom: 1.2rem;">
+  <div class="col-sm-4 mb-2 mb-sm-0">
     <a href="/posts/2026/grpo-sft-teaching-reasoning-through-arithmetic/"><img src="/assets/img/grpo/grpo_dynamics.png" class="img-fluid rounded z-depth-1" alt="GRPO training dynamics: accuracy up, response length down then up"></a>
   </div>
   <div class="col-sm-8">
     <strong>LLM Post-Training with GRPO and SFT | Reinforcement Learning</strong><br>
     Trained and evaluated Qwen2.5-3B on Countdown with GRPO/RLVR and SFT. GRPO raised add/subtract coverage from <strong>54% to 94%</strong> (pass@10), with reasoning length tracing a three-phase arc as responses became coherent: rambling at 580 characters, down to a terse 172, then settling at 287. SFT was then used to enhance multiplication, and an SFT-then-GRPO pipeline raised add/subtract <strong>pass@1 to 71%</strong> (more confident single-shot, though lower at pass@k). Multiplication set to 0%.<br>
-    [<a href="/posts/2026/grpo-sft-teaching-reasoning-through-arithmetic/">writeup</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
+    [<a href="/posts/2026/grpo-sft-teaching-reasoning-through-arithmetic/">post</a>] [<a href="https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo">models</a>] [<a href="https://huggingface.co/datasets/leon2k2k2k/countdown-mult-sft">data</a>]
   </div>
 </div>
 
@@ -68,7 +79,7 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
   <div class="col-sm-8">
     <strong>Autonomous Math Agent on Erdős Problems | AI for Math</strong><br>
     Built a pipeline that triages and attacks open Erdős problems at scale on top of the Rethlas generate-and-verify agent. It produced new bounds and partial results on five open problems (<strong>#153, #301, #327, #675(a), #819</strong>).<br>
-    [<a href="/posts/2026/rethlas-autonomous-erdos-pipeline/">writeup</a>] [<a href="/erdos/">solutions</a>] [<a href="https://github.com/leon2k2k2k/Rethlas">repo</a>] [<a href="https://www.erdosproblems.com/forum/user/leon2k2k2k">erdosproblems.com</a>]
+    [<a href="/posts/2026/rethlas-autonomous-erdos-pipeline/">post</a>] [<a href="/erdos/">solutions</a>] [<a href="https://github.com/leon2k2k2k/Rethlas">repo</a>] [<a href="https://www.erdosproblems.com/forum/user/leon2k2k2k">erdosproblems.com</a>]
   </div>
 </div>
 
@@ -79,7 +90,7 @@ An agent-assisted LLM training pipeline (frozen specs, autonomous GPU runs, post
   <div class="col-sm-8">
     <strong>Parameter Golf: Depth-Recurrence in Small-Model Pretraining | pretraining</strong><br>
     Starting from a strong depth-recurrent small-model pretraining recipe, we learned the per-pass mixing coefficients in its loop band, found they converge to the same values regardless of initialization, and froze them as constants, <strong>improving validation BPB from 1.06549 to 1.06421, a roughly 3-sigma gain across 3 seeds</strong>, at zero size cost. We also audited a validation-data leak across the leaderboard and analyzed a sub-1.0-BPB scoring exploit. This was part of OpenAI's Parameter Golf, a six-week competition to build the best language model under a 16 MB, 10-minute budget; we wrote up the competition itself separately.<br>
-    [<a href="/posts/2026/improving-one-small-model-depth-recurrence/">writeup</a>] [<a href="/posts/2026/parameter-golf-six-weeks-to-build-the-best-llm/">competition writeup</a>] [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>]
+    [<a href="/posts/2026/improving-one-small-model-depth-recurrence/">post</a>] [<a href="/posts/2026/parameter-golf-six-weeks-to-build-the-best-llm/">competition post</a>] [<a href="https://github.com/openai/parameter-golf/pull/1779">PR #1779</a>]
   </div>
 </div>
 
